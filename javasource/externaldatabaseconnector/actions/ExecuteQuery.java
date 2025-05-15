@@ -15,12 +15,12 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
 import com.mendix.webui.CustomJavaAction;
-
 import externaldatabaseconnector.mx.impl.JdbcConnector;
 import externaldatabaseconnector.proxies.constants.Constants;
 import java.util.List;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class ExecuteQuery extends CustomJavaAction<java.util.List<IMendixObject>>
+public class ExecuteQuery extends UserAction<java.util.List<IMendixObject>>
 {
 	private final java.lang.String connectionDetails;
 	private final java.lang.String sql;

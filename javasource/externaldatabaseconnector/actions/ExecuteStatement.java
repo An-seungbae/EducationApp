@@ -13,11 +13,11 @@ import com.mendix.core.Core;
 import com.mendix.logging.ILogNode;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-
 import externaldatabaseconnector.mx.impl.JdbcConnector;
 import externaldatabaseconnector.proxies.constants.Constants;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class ExecuteStatement extends CustomJavaAction<java.lang.Long>
+public class ExecuteStatement extends UserAction<java.lang.Long>
 {
 	private final java.lang.String connectionDetails;
 	private final java.lang.String sql;

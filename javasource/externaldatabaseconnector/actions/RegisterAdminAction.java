@@ -13,7 +13,6 @@ import com.mendix.core.Core;
 import com.mendix.m2ee.api.IAppContainer;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-
 import externaldatabaseconnector.livepreview.actions.MxExecuteCallableAdminAction;
 import externaldatabaseconnector.livepreview.actions.MxExecuteQueryAdminAction;
 import externaldatabaseconnector.livepreview.actions.MxExecuteStatementAdminAction;
@@ -21,8 +20,9 @@ import externaldatabaseconnector.livepreview.actions.MxGetSchemaInfoAdminAction;
 import externaldatabaseconnector.livepreview.actions.MxTestConnectionAdminAction;
 import externaldatabaseconnector.livepreview.actions.MxCheckAdminAction;
 import externaldatabaseconnector.proxies.constants.Constants;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class RegisterAdminAction extends CustomJavaAction<java.lang.Void>
+public class RegisterAdminAction extends UserAction<java.lang.Void>
 {
 	public RegisterAdminAction(IContext context)
 	{
@@ -57,5 +57,6 @@ public class RegisterAdminAction extends CustomJavaAction<java.lang.Void>
 		return "RegisterAdminAction";
 	}
 
+	// BEGIN EXTRA CODE
 	// END EXTRA CODE
 }

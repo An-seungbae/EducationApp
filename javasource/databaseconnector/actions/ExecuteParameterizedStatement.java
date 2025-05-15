@@ -14,51 +14,58 @@ import com.mendix.logging.ILogNode;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import databaseconnector.impl.JdbcConnector;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
- * For a more detailed documentation, please visit the website at
- * https://docs.mendix.com/appstore/connectors/database-connector
- * 
- * This Java action provides a consistent environment for Mendix projects to
- * perform arbitrary parameterized SQL statements on external relational
- * databases. The statement text may contain placeholders to be filled in with
- * values directly from Mendix.
- * 
- * Do not use this Java action for SELECT queries. This action returns the
- * number of affected rows.
- * 
- * The JDBC drivers for the databases you want to connect to must be placed
- * inside the userlib directory of your project.
- * 
- * Note: While the text parameters are properly escaped, proper security is still
- *       required when manually composing the parameterized template text to avoid
- *       SQL injection.
- * 
- * @param jdbcUrl A database JDBC URL address that points to your database.
- * 
- * @param userName The user name for logging into the database.
- * 
- * @param password The password for logging into the database.
- * 
- * @param sql A string template containing the SQL statement to be performed and the
- *            statement parameters.
- * 
+ * For a more detailed documentation, please visit the website at
+ * https://docs.mendix.com/appstore/connectors/database-connector
+ * 
+ * This Java action provides a consistent environment for Mendix projects to
+ * perform arbitrary parameterized SQL statements on external relational
+ * databases. The statement text may contain placeholders to be filled in with
+ * values directly from Mendix.
+ * 
+ * Do not use this Java action for SELECT queries. This action returns the
+ * number of affected rows.
+ * 
+ * The JDBC drivers for the databases you want to connect to must be placed
+ * inside the userlib directory of your project.
+ * 
+ * Note: While the text parameters are properly escaped, proper security is still
+ *       required when manually composing the parameterized template text to avoid
+ *       SQL injection.
+ * 
+ * @param jdbcUrl A database JDBC URL address that points to your database.
+ * 
+ * @param userName The user name for logging into the database.
+ * 
+ * @param password The password for logging into the database.
+ * 
+ * @param sql A string template containing the SQL statement to be performed and the
+ *            statement parameters.
+ * 
  * @return Number of affected rows.
  */
-public class ExecuteParameterizedStatement extends CustomJavaAction<java.lang.Long>
+public class ExecuteParameterizedStatement extends UserAction<java.lang.Long>
 {
-	private java.lang.String jdbcUrl;
-	private java.lang.String userName;
-	private java.lang.String password;
-	private com.mendix.systemwideinterfaces.javaactions.parameters.IStringTemplate sql;
+	private final java.lang.String jdbcUrl;
+	private final java.lang.String userName;
+	private final java.lang.String password;
+	private final com.mendix.systemwideinterfaces.javaactions.parameters.IStringTemplate sql;
 
-	public ExecuteParameterizedStatement(IContext context, java.lang.String jdbcUrl, java.lang.String userName, java.lang.String password, com.mendix.systemwideinterfaces.javaactions.parameters.IStringTemplate sql)
+	public ExecuteParameterizedStatement(
+		IContext context,
+		java.lang.String _jdbcUrl,
+		java.lang.String _userName,
+		java.lang.String _password,
+		com.mendix.systemwideinterfaces.javaactions.parameters.IStringTemplate _sql
+	)
 	{
 		super(context);
-		this.jdbcUrl = jdbcUrl;
-		this.userName = userName;
-		this.password = password;
-		this.sql = sql;
+		this.jdbcUrl = _jdbcUrl;
+		this.userName = _userName;
+		this.password = _password;
+		this.sql = _sql;
 	}
 
 	@java.lang.Override

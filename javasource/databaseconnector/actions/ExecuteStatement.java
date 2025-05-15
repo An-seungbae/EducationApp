@@ -14,56 +14,63 @@ import com.mendix.logging.ILogNode;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import databaseconnector.impl.JdbcConnector;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
- * For a more detailed documentation, please visit the website at
- * https://docs.mendix.com/appstore/connectors/database-connector
- * 
- * This Java action provides a consistent environment for Mendix projects to
- * perform arbitrary SQL statements on external relational databases.
- * 
- * Do not use this Java action for SELECT queries. This action returns the
- * number of affected rows.
- * 
- * JDBC (Java Database Connectivity) API, a standard Java API, is used when this
- * Java action attempts to connect to a Relational Database for which a JDBC driver
- * exists. The JDBC drivers for the databases you want to connect to must be placed
- * inside the userlib directory of your project.
- * 
- * The jdbcUrl argument must specify a database URL address that points to your
- * relational database and is dependent upon the particular database and JDBC
- * driver.
- * 
- * For example, 'jdbc:mysql://hostname/databaseName' can be used for MySQL
- * databases.
- * 
- * Note: Proper security is required when manually composing the statement text to
- *       avoid SQL injection.
- * 
- * @param jdbcUrl A database URL address that points to your database.
- * 
- * @param userName The user name for logging into the database.
- * 
- * @param password The password for logging into the database.
- * 
- * @param sql A string containing the SQL statement to be performed.
- * 
+ * For a more detailed documentation, please visit the website at
+ * https://docs.mendix.com/appstore/connectors/database-connector
+ * 
+ * This Java action provides a consistent environment for Mendix projects to
+ * perform arbitrary SQL statements on external relational databases.
+ * 
+ * Do not use this Java action for SELECT queries. This action returns the
+ * number of affected rows.
+ * 
+ * JDBC (Java Database Connectivity) API, a standard Java API, is used when this
+ * Java action attempts to connect to a Relational Database for which a JDBC driver
+ * exists. The JDBC drivers for the databases you want to connect to must be placed
+ * inside the userlib directory of your project.
+ * 
+ * The jdbcUrl argument must specify a database URL address that points to your
+ * relational database and is dependent upon the particular database and JDBC
+ * driver.
+ * 
+ * For example, 'jdbc:mysql://hostname/databaseName' can be used for MySQL
+ * databases.
+ * 
+ * Note: Proper security is required when manually composing the statement text to
+ *       avoid SQL injection.
+ * 
+ * @param jdbcUrl A database URL address that points to your database.
+ * 
+ * @param userName The user name for logging into the database.
+ * 
+ * @param password The password for logging into the database.
+ * 
+ * @param sql A string containing the SQL statement to be performed.
+ * 
  * @return Number of affected rows.
  */
-public class ExecuteStatement extends CustomJavaAction<java.lang.Long>
+public class ExecuteStatement extends UserAction<java.lang.Long>
 {
-	private java.lang.String jdbcUrl;
-	private java.lang.String userName;
-	private java.lang.String password;
-	private java.lang.String sql;
+	private final java.lang.String jdbcUrl;
+	private final java.lang.String userName;
+	private final java.lang.String password;
+	private final java.lang.String sql;
 
-	public ExecuteStatement(IContext context, java.lang.String jdbcUrl, java.lang.String userName, java.lang.String password, java.lang.String sql)
+	public ExecuteStatement(
+		IContext context,
+		java.lang.String _jdbcUrl,
+		java.lang.String _userName,
+		java.lang.String _password,
+		java.lang.String _sql
+	)
 	{
 		super(context);
-		this.jdbcUrl = jdbcUrl;
-		this.userName = userName;
-		this.password = password;
-		this.sql = sql;
+		this.jdbcUrl = _jdbcUrl;
+		this.userName = _userName;
+		this.password = _password;
+		this.sql = _sql;
 	}
 
 	@java.lang.Override

@@ -17,52 +17,60 @@ import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
 import com.mendix.webui.CustomJavaAction;
 import databaseconnector.impl.JdbcConnector;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
- * For a more detailed documentation, please visit the website at
- * https://docs.mendix.com/appstore/connectors/database-connector
- * 
- * This Java action provides a consistent environment for Mendix projects to
- * perform an arbitrary SELECT SQL query on external relational databases.
- * 
- * Do not use this Java action for INSERT, UPDATE, DELETE or DDL queries. This
- * action returns a list of Mendix objects based on the JDBC result set.
- * 
- * The JDBC drivers for the databases you want to connect to must be placed
- * inside the userlib directory of your project.
- * 
- * Note: Proper security is required when manually composing the query text to
- *       avoid SQL injection.
- * 
- * @param jdbcUrl A database JDBC URL address that points to your database.
- * 
- * @param userName The user name for logging into the database.
- * 
- * @param password The password for logging into the database.
- * 
- * @param sql The SELECT query to be performed.
- * 
- * @param resultObject An instance of the resulting object. This instance is used
- *                     only for defining the type of object to be returned.
- * 
+ * For a more detailed documentation, please visit the website at
+ * https://docs.mendix.com/appstore/connectors/database-connector
+ * 
+ * This Java action provides a consistent environment for Mendix projects to
+ * perform an arbitrary SELECT SQL query on external relational databases.
+ * 
+ * Do not use this Java action for INSERT, UPDATE, DELETE or DDL queries. This
+ * action returns a list of Mendix objects based on the JDBC result set.
+ * 
+ * The JDBC drivers for the databases you want to connect to must be placed
+ * inside the userlib directory of your project.
+ * 
+ * Note: Proper security is required when manually composing the query text to
+ *       avoid SQL injection.
+ * 
+ * @param jdbcUrl A database JDBC URL address that points to your database.
+ * 
+ * @param userName The user name for logging into the database.
+ * 
+ * @param password The password for logging into the database.
+ * 
+ * @param sql The SELECT query to be performed.
+ * 
+ * @param resultObject An instance of the resulting object. This instance is used
+ *                     only for defining the type of object to be returned.
+ * 
  * @return Result of the query as a list of mendix objects.
  */
-public class ExecuteQuery extends CustomJavaAction<java.util.List<IMendixObject>>
+public class ExecuteQuery extends UserAction<java.util.List<IMendixObject>>
 {
-	private java.lang.String jdbcUrl;
-	private java.lang.String userName;
-	private java.lang.String password;
-	private java.lang.String sql;
-	private IMendixObject resultObject;
+	private final java.lang.String jdbcUrl;
+	private final java.lang.String userName;
+	private final java.lang.String password;
+	private final java.lang.String sql;
+	private final IMendixObject resultObject;
 
-	public ExecuteQuery(IContext context, java.lang.String jdbcUrl, java.lang.String userName, java.lang.String password, java.lang.String sql, IMendixObject resultObject)
+	public ExecuteQuery(
+		IContext context,
+		java.lang.String _jdbcUrl,
+		java.lang.String _userName,
+		java.lang.String _password,
+		java.lang.String _sql,
+		IMendixObject _resultObject
+	)
 	{
 		super(context);
-		this.jdbcUrl = jdbcUrl;
-		this.userName = userName;
-		this.password = password;
-		this.sql = sql;
-		this.resultObject = resultObject;
+		this.jdbcUrl = _jdbcUrl;
+		this.userName = _userName;
+		this.password = _password;
+		this.sql = _sql;
+		this.resultObject = _resultObject;
 	}
 
 	@java.lang.Override

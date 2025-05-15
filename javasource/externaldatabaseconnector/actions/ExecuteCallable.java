@@ -15,11 +15,11 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.meta.IMetaObject;
 import com.mendix.webui.CustomJavaAction;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
-
 import externaldatabaseconnector.mx.impl.JdbcConnector;
 import externaldatabaseconnector.proxies.constants.Constants;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class ExecuteCallable extends CustomJavaAction<IMendixObject>
+public class ExecuteCallable extends UserAction<IMendixObject>
 {
 	private final java.lang.String connectionDetails;
 	private final java.lang.String sql;
