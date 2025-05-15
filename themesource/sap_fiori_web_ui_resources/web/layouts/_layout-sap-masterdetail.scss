@@ -1,0 +1,76 @@
+$master-width: 320px;
+
+.sap-layout-masterdetail {
+    .mx-scrollcontainer-slide {
+        @media (min-width: $screen-sm) {
+            .toggle-btn {
+                display: none;
+            }
+
+            .region-master {
+                width: $master-width !important;
+
+                .mx-scrollcontainer-wrapper {
+                    left: 0 !important;
+                }
+            }
+
+            .region-detail {
+                margin-left: $master-width !important;
+            }
+        }
+
+        .region-master {
+            background-color: var(--grayscale-application-content-background-color);
+
+            >.mx-scrollcontainer-wrapper {
+                position: relative !important;
+                border-right: 1px solid var(--primary5-color);
+                background-color: var(--grayscale-application-content-background-color);
+                color: var(--grayscale-text-and-titles-color);
+                z-index: 999;
+            }
+
+            .sap-mainheader {
+                background-color: var(--grayscale-application-content-background-color);
+                box-shadow: none;
+            }
+
+            .mx-listview {
+                .mx-listview-searchbar {
+                    margin: 0;
+
+                    .form-control {
+                        border-width: 1px 0;
+                    }
+                }
+            }
+        }
+
+        .region-detail {
+            background-color: var(--grayscale-application-content-background-color);
+        }
+    }
+}
+
+.region-master {
+    >.mx-scrollcontainer-wrapper {
+        position: relative;
+        z-index: 999;
+        background:#fff;
+    }
+}
+
+
+
+
+.sap-layout-masterdetail-letterbox {
+    @extend .sap-layout-masterdetail;
+
+    &>.mx-placeholder>.mx-scrollcontainer>.mx-layoutcontainer-middle {
+        width: 1280px;
+        margin: auto;
+        background-color: var(--grayscale-application-content-background-color);
+        box-shadow: 0 0 24px $letterbox-shadow-color;
+    }
+}

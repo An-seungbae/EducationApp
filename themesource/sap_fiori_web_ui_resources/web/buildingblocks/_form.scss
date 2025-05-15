@@ -1,0 +1,42 @@
+/* ==========================================================================
+    Form
+========================================================================== */
+
+//== Default
+//-------------------------------------------------------------------------------------------------------------------//
+.sap-form {
+    .sap-form-content {
+        padding: $spacing-medium;
+    }
+}
+
+//== Elements
+//-------------------------------------------------------------------------------------------------------------------//
+.sap-form-title {
+    height: 48px;
+    font-size: $font-size-h4;
+    line-height: 48px;
+    color: var(--grayscale-text-and-titles-color);
+}
+.sap-form-title-lined {
+    padding: 0 $spacing-medium;
+    border-bottom: 1px solid #CCCCCC;
+    @extend .sap-form-title;
+}
+.sap-form-subtitle {
+    height: 32px;
+    margin-bottom: 8px;
+    font-size: $font-size-h5;
+    line-height: 32px;
+    color: var(--grayscale-text-and-titles-color);
+}
+
+//== Variant
+//-------------------------------------------------------------------------------------------------------------------//
+.sap-form-compact {
+    .form-group {
+        padding: 0;
+    }
+}
+
+

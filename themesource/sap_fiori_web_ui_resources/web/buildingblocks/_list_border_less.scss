@@ -1,0 +1,79 @@
+/* ==========================================================================
+   List Border Less 
+
+========================================================================== */
+.list-no-border {
+
+    .mx-grid-content{
+
+        table{
+            
+            border-collapse: collapse;
+            tbody tr {
+                padding: 5px 10px !important;
+                border: none  !important;
+              
+                td {
+                    padding: 5px 10px !important;
+                    border: none  !important;
+                }
+            }
+
+            tbody tr.selected .td,  tbody tr.selected:hover td{
+                background-color: var(--darken-primary2-color) !important;
+                color: var(--primary3-color) !important;
+
+            }
+
+            ul > li{
+                padding: 5px 10px !important;
+                border: none  !important;
+            }
+
+            tbody .selected td, tbody tr.selected:hover td{
+                background: var(--darken-primary2-color) !important;
+                color: var(--primary3-color) !important;
+            }
+            
+
+        }
+
+
+    }
+    .mx-datagrid {
+        padding: 5px 10px !important;
+        border: 0px  !important;
+        table{
+            
+            border-collapse: collapse;
+            tbody tr {
+                padding: 5px 10px !important;
+                border: none  !important;
+              
+                td {
+                    padding: 5px 10px !important;
+                    border: none  !important;
+                }
+            }
+            ul > li{
+                padding: 5px 10px !important;
+                border: none  !important;
+            }
+            tbody .selected td,  tbody tr.selected:hover td{
+
+                background-color: var(--darken-primary2-color) !important;
+                color: var(--primary3-color) !important;
+            }
+         
+       
+        }
+    }
+ 
+    .mx-listview > ul > li,    .mx-listview.listview-bordered.mx-listview > ul > li{
+        border-style: none !important;
+        border-width: 0px !important;
+    }
+}
+
+
+

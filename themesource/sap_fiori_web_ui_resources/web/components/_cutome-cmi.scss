@@ -1,0 +1,26 @@
+//
+// DISCLAIMER:
+// Do not change this file because it is core styling.
+// Customizing core files will make updating Atlas much more difficult in the future.
+// To customize any core styling, copy the part you want to customize to styles/web/sass/app/ so the core styling is overwritten.
+//
+/* ==========================================================================*/
+
+
+.bower-order-action-btn{
+    background-color: transparent;
+    color: var(--primary2-color);
+    border-color: transparent;
+
+    color: var(--primary2-color);
+
+}
+.bower-order-action-btn:hover{
+    border-color: var(--darken-primary2-color);
+    color: var(--darken-primary2-color);
+}
+
+
+.product-left-side-title{
+    display: inline-table;
+}

@@ -1,0 +1,13 @@
+// overwrite atlas3
+.widget-pagination {
+    .pagination ul {
+        margin-top: 2px;
+        margin-bottom:2px;
+
+        li {
+            width: 48px;
+            padding: 8px 16px;
+            border-radius: unset;
+        }
+    }
+}

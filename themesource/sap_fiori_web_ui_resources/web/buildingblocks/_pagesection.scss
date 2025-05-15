@@ -1,0 +1,36 @@
+/* ==========================================================================
+    Page Section
+========================================================================== */
+
+//== Default
+//-------------------------------------------------------------------------------------------------------------------//
+.sap-pagesection {
+    border-bottom: 2px solid #F2F2F2;
+
+    .sap-pagesection-header {
+        @include get-responsive-spacing-large($type: padding, $direction: left);
+        @include get-responsive-spacing-large($type: padding, $direction: right);
+        border-bottom: 2px solid #F2F2F2;
+    }
+}
+
+//== Elements
+//-------------------------------------------------------------------------------------------------------------------//
+.sap-pagesection-title {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: 38px;
+    padding-bottom: 8px;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    border-bottom: 2px solid #999999;
+    font-size: $font-size-h4;
+    line-height: 32px;
+}
+
+
+//== Subsection
+//-------------------------------------------------------------------------------------------------------------------//

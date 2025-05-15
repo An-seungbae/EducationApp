@@ -1,0 +1,436 @@
+@import "../../atlas_core/web/exclusion-variables";
+@import "../../atlas_core/web/variables";
+@import "custom-variables";
+@import '../../../theme/web/custom-variables';
+
+
+// Atlas Core Base
+@import "../../atlas_core/web/core/base/mixins/animations";
+@import "../../atlas_core/web/core/base/mixins/spacing";
+@import "../../atlas_core/web/core/base/mixins/layout-spacing";
+@import "../../atlas_core/web/core/base/mixins/buttons";
+@import "../../atlas_core/web/core/base/mixins/groupbox";
+
+// Components
+@import "components/buttons";
+@import "components/datagrids";
+@import "components/inputs";
+@import "components/listview";
+@import "components/modals";
+@import "components/loader";
+@import "components/tabcontainer";
+@import "components/typography";
+@import "components/labels";
+@import "components/alerts";
+@import "components/navigationtree";
+@import "components/simplemenubar";
+@import "components/progress";
+@import "components/datepicker";
+@import "components/switches";
+@import "components/cutome-cmi";
+@import "components/pagination";
+
+// Building blocks
+@import "buildingblocks/breadcrumb";
+@import "buildingblocks/popover";
+@import "buildingblocks/listBreadcrumb";
+@import "buildingblocks/icons";
+@import "buildingblocks/alignment-block";
+// @import "buildingblocks/container";
+@import "buildingblocks/dashboard";
+@import "buildingblocks/footer";
+@import "buildingblocks/form";
+@import "buildingblocks/list";
+@import "buildingblocks/mainheader";
+@import "buildingblocks/objectstatus";
+@import "buildingblocks/pageheader";
+@import "buildingblocks/pagesection";
+@import "buildingblocks/tile";
+@import "buildingblocks/wizard";
+@import "buildingblocks/list-card";
+@import "buildingblocks/time-line-card";
+@import "buildingblocks/shell-bar";
+@import "buildingblocks/analytical-card";
+@import "buildingblocks/list_border_less";
+@import "buildingblocks/flex-container";
+
+
+// Layouts
+@import "layouts/layout-sap";
+@import "layouts/layout-sap-default";
+@import "layouts/layout-sap-masterdetail";
+@import "layouts/layout-sap-masterdetail-sliding";
+
+
+body {
+    background-color: var(--grayscale-application-content-background-color);
+    color: var(--grayscale-text-and-titles-color);
+}
+
+input[type='radio']:after {
+    background-color: #BFBFBF;
+}
+
+input[type='radio']:checked:before {
+    border-color: #BFBFBF;
+}
+
+.mx-radiobuttons.inline .mx-radiogroup .radio {
+    margin: 0 10px 0 0;
+}
+
+.mx-radiobuttons .radio input[type="radio"] {
+    margin-right: 0px;
+}
+
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label label {
+    font-weight: normal;
+}
+
+.datagrid-bordered.mx-datagrid table {
+    border: 0;
+}
+
+//onclick change the color
+.mx-groupbox-collapsible h2[aria-expanded="true"] {
+    background-color: var(--grayscale-header-container-borders-color);
+    color: var(--grayscale-text-and-titles-color);
+}
+
+.mx-groupbox>.mx-groupbox-body {
+    background-color: var(--grayscale-header-container-borders-color);
+}
+
+.item-list-view-list{
+
+    padding-left: 0px !important;
+}
+
+.flex-center_search_header{
+    margin-left: 30px;
+    margin-right: 30px;
+    .item-left-header{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+       
+    }
+    .item-right-header{
+        margin-left: 0px !important;
+        margin-right: 120px !important;
+    }
+    
+    
+}
+
+/*.mx-listview > ul > li.selected{
+    background-color: $nav-selected;
+}*/
+
+.mx-listview-loadMore{
+    color: var(--primary2-color);
+    border-color: var(--primary2-color);
+    background-color: var(--primary3-color);
+}
+
+
+
+/* ==========================================================================
+   Below CSS are added by CMI for Bug Fixes
+========================================================================== */
+
+@media only screen and (max-width: 550px) and (min-width: 320px)  {
+    .fiori-form-list .control-label {
+        padding: 0px 2px 0px 16px;
+    }
+    .fiori-form-list {
+        display: block;
+    }
+
+    .master-list-section .mx-button{
+    padding:2px 15px !important;
+
+    }
+    .form_align .form-group {
+    flex-direction: column;
+    padding: 0px 0px 0px 10px;
+    }
+
+    .mstr_list_mobile .mx-scrollcontainer-horizontal {
+        width: 100%;
+        table-layout: inherit;
+    }
+    .mstr_list_mobile .mx-scrollcontainer-horizontal>div {
+        display: inherit;
+        vertical-align: top;
+    }
+    .fiori-form-list_initial .control-label {
+        padding: 6px 0px 0px 30px;
+    }
+
+    .fiori-form-list_initial .mx-dataview-controls{
+    padding:8px 15px;
+    
+    }
+
+    .btn_initial {
+        margin-right: 40px !important;
+        margin-left: 4px;
+    }
+    .sap-layout .region-topbar .mx-title {
+        font-size: 11px;
+    }
+
+    .mx-window-active {
+        left: 0 !important;
+    }
+
+    .footer-btn-act{
+        
+    justify-content:left !important;
+    }
+    .widzed-page-form-section .control-label {
+    padding: 0px 0px 0px 15px !important;	
+    }
+    .sap-mainheader-center .mx-placeholder{
+    padding-left:15px !important;
+    padding-bottom: 30px;
+
+    }
+    .sap-list .mx-listview .mx-listview-searchbar{
+        position: relative;
+        top: 0px;
+    }
+    .profile-phone .mx-listview .mx-listview-searchbar .btn{
+        padding: 0px 15px;
+    }
+
+    .shopping-card-item-grid {
+
+        .mx-templategrid-content-wrapper{    
+
+            border-collapse: separate;
+            border-spacing: 15px 50px;
+            background: var(--primary3-color);
+            box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
+            margin: .5rem;
+            border-radius: .25rem;
+                
+                .mx-dataview-content{
+                    padding: 15px;
+                }
+                .mx-templategrid-item{
+                    width: 100% !important;
+                    display: block;
+            }
+        }
+    }
+    .flex-center_search_header .item-left-header{
+		margin-left: 0px !important;
+	}
+    .sap-mainheader{
+		display:block;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 650px)  {
+    .fiori-form-list {
+        display: block;
+    }
+    .fiori-form-list .row {
+        display: block;
+    }
+    .fiori-form-list .control-label {
+        text-align: left;
+        padding: 0px 0px 0px 15px;
+    }
+    .fiori-form-list_initial .form-group {
+        flex-direction: inherit;
+    }
+    .form_align .form-group {
+        flex-direction: inherit;
+    }
+    .sap-list .mx-listview .mx-listview-searchbar{
+        position: relative;
+        top: 0px;
+    }
+    .profile-phone .mx-listview .mx-listview-searchbar .btn{
+        padding: 0px 15px;
+    }
+
+    .shopping-card-item-grid {
+
+        .mx-templategrid-row{
+            
+            display: table-cell;
+        }
+        .mx-templategrid-content-wrapper{    
+
+            border-collapse: separate;
+            border-spacing: 15px 50px;
+            background: var(--primary3-color);
+            box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
+            margin: .5rem;
+            border-radius: .25rem;
+                
+                .mx-dataview-content{
+                    padding: 15px;
+                }
+                
+                .mx-templategrid-item{
+                    width: 100% !important;
+                    display: inline-block;
+                }
+        }
+
+        .mx-templategrid-row{
+            
+            display: table-cell;
+        }
+    }
+    .flex-center_search_header .item-left-header{
+		margin-left: 0px !important;
+	}
+	.sap-mainheader{
+	    display:block;
+	}
+
+
+}
+
+@media only screen and (max-width: 1210px) and (min-width: 800px)  {
+    .fiori-form-list .control-label {
+        padding: 0px;
+    }
+    .flx_lst_wdth .col-lg-3 {
+        flex: 0 0 22.5%;
+        max-width: 25%;
+    }
+    .fiori-form-list_initial .control-label{
+    text-align: left;
+    padding-left: 50px;
+    }
+    .fiori-form-list_initial .mx-dataview-controls{
+    padding:8px 30px;
+    
+    }
+    .worklist_page_cat_list > ul .mx-listview-empty > label{
+    white-space: normal !important;
+    word-break: break-all !important;
+    }
+    .sap-wizard-step{
+        display: inline-block !important;
+    }
+    .mx-listview-searchbar{
+        top: 0px;
+        padding-top: 20px;
+    }
+    .shopping-card-item-grid {
+
+        .mx-templategrid-row{
+            
+            display: table-cell;
+        }
+        .mx-templategrid-content-wrapper{    
+
+            border-collapse: separate;
+            border-spacing: 15px 50px;
+            background: var(--primary3-color);
+            box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
+            margin: .5rem;
+            border-radius: .25rem;
+                
+                .mx-dataview-content{
+                    padding: 15px;
+                }
+                
+                .mx-templategrid-item{
+                    width: 100% !important;
+                    display: inline-block;
+            }
+        }
+    }
+}
+
+.sap-tile {
+    width: 250px !important;
+}
+
+.mx-dataview .mx-dataview-controls {
+    border-top: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+/** group box */
+.mx-groupbox>.mx-groupbox-header {
+    background-color: var(--grayscale-header-card-container-background-color);
+    color: var(--grayscale-text-and-titles-color);
+}
+
+/** progress bar */
+div.widget-progress-bar .progress-bar-default {
+    background-color: var(--primary7-color);
+}
+
+div.widget-progress-bar-text-contrast .progress-bar {
+    color: var(--grayscale-header-card-container-background-color);
+}
+
+
+body {
+    background: var(--grayscale-application-content-background-color);
+}
+.mx-dataview .mx-dataview-controls{
+    border-top: 1px solid rgba(0,0,0,0) !important;
+}
+
+.manage-product-header-bar{
+    border-bottom: none;
+   /* box-shadow: 0 0.25rem 0.25rem -0.25rem rgba(0,0,0,0.15), inset 0 -0.0625rem 0 0 #d9d9d9;*/
+    margin: 10px 30px 30px 30px;
+    
+}
+.listview-item-multiline .mx-text{
+    display: block;
+}
+
+.shopping-card-item-grid {
+
+    .mx-templategrid-content-wrapper{    
+
+        border-collapse: separate;
+        border-spacing: 15px 50px;
+        background: var(--grayscale-header-card-container-background-color);
+        box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
+        margin: .5rem;
+        border-radius: .25rem;
+        
+        .mx-dataview-content{
+            padding: 15px;
+        }
+        .mx-templategrid-item{
+            background: var(--grayscale-header-card-container-background-color) !important;
+            box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
+            margin: .5rem;
+            border-radius: .25rem;
+            &:hover{
+                background-color: var(--grayscale-header-card-container-background-color) !important;
+
+            }
+        }
+
+    }
+    &:hover{
+        background: transparent;
+    }
+    
+}
+
+.manage-product-header-bar{
+	.flexcontainer{
+		overflow: visible;
+	}
+}
+
+.flex-center_search_header{
+	border-top: 2px solid #d9d9d9;
+	padding-top: 10px;
+}

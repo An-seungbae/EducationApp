@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Datagrid Default
+
+========================================================================== */
+.mx-datagrid {
+    .mx-grid-search-controls {
+        margin-top: 34px;
+
+        .btn {
+            margin-bottom: 0;
+        }
+
+        .mx-name-search {
+            @extend .btn-primary;
+        }
+    }
+
+    .mx-grid-searchbar {
+        .mx-grid-search-item {
+            display: inline-flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .mx-grid-search-label {
+                width: 100%;
+                margin-bottom: 3px;
+                text-align: left;
+            }
+
+            .mx-grid-search-input {
+                width: 100%;
+                min-width: 300px;
+            }
+        }
+    }
+
+    .mx-grid-controlbar {
+        .btn {
+            margin-bottom: 0;
+            text-shadow: none;
+        }
+
+        .mx-grid-pagingbar .mx-grid-paging-status {
+            padding: 0;
+            vertical-align: bottom;
+            line-height: 1;
+        }
+    }
+}
+
+.datagrid-fullpage.mx-datagrid {
+
+    .mx-grid-searchbar,
+    .mx-grid-controlbar,
+    .mx-grid-content {
+        @include layout-spacing($type: padding, $direction: all, $device: responsive);
+        margin: 0;
+    }
+
+    .mx-grid-controlbar {
+        padding-bottom: 0;
+    }
+
+    .mx-grid-searchbar {
+        background-color: var(--primary3-color);
+        box-shadow: inset 0 -1px 0 0 var(--bax-shadow-color);
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+    .form-group>[class*='col-'] {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .mx-datagrid table {
+        table-layout: auto;
+    }
+
+    .datagrid-fullpage.mx-datagrid .mx-grid-content {
+        overflow: scroll;
+    }
+
+    .sap-mainheader-center .mx-placeholder {
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 1210px) and (min-width: 800px) {
+    .mx-datagrid table {
+        table-layout: auto;
+    }
+
+    .datagrid-fullpage.mx-datagrid .mx-grid-content {
+        overflow: scroll;
+    }
+}
+
+@media only screen and (min-width: 1211px) {
+    .mx-datagrid table {
+        table-layout: auto;
+    }
+
+    .datagrid-fullpage.mx-datagrid .mx-grid-content {
+        overflow: scroll;
+    }
+}
+
+.mx-datagrid th, .mx-datagrid tr,  .mx-datagrid td {
+    background-color: var(--primary3-color) !important;
+    border: 1px solid var(--table-border-color);
+}
+.mx-datagrid table th {
+    border: 1px solid var(--table-border-color);
+}
+
+.mx-datagrid table tbody tr td{
+    background-color: var(--primary3-color) !important;
+    border: 1px solid var(--table-border-color);
+}

@@ -1,0 +1,223 @@
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+
+
+// Default Buttons
+.btn,
+.btn-default {
+
+    color: var(--darken-primary2-color);
+    border-color: var(--btn-default-border-color);
+    background-color: var(--btn-default-bg-color);
+
+    &:focus {
+        color: var(--darken-primary2-color);
+        background-color: var(--primary3-color);
+        border-color: var(--btn-default-border-color);
+        outline: none;
+    }
+
+    &:hover {
+        color: var(--darken-primary2-color);
+        background-color: var(--btn-hover-background-color);
+        border-color: var(--btn-default-hover-border-color);
+        box-shadow: var(--btn-default-hover-box-shadow) ;
+    }
+}
+
+.btn,
+.mx-button {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 7px;
+    text-align: center;
+    margin-right: 2px;
+    font-weight: bold;
+
+    &:focus {
+        z-index: 5;
+        outline: none;
+        box-shadow: none;
+        position: relative;
+    }
+    &:focus:after {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            display: block;
+            left: var(--btn-outline-offset);
+            top: var(--btn-outline-offset);
+            right: var(--btn-outline-offset);
+            bottom: var(--btn-outline-offset);
+            border: var(--btn-content-focus-width) var(--btn-content-focus-style) var(--btn-content-focus-color);
+            border-radius: var(--btn-focus-border-radius);
+    }
+}
+
+// Success Button 
+
+.btn-success {
+    color: var(--semantic-foreground-positive-color);
+    border-color: var(--btn-success-border-color);
+    background-color: var(--btn-success-bg-color);
+
+    &:focus {
+        color: var(--accent8-color);
+        background-color: var(--semantic-background-positive-color);
+        border-color: var(--semantic-foreground-positive-color);
+    }
+
+    &:hover {
+        color: var(--semantic-foreground-positive-color);
+        background-color: var(--btn-success-hover-bg-color);
+        border-color: var(--btn-success-hover-border-color);
+        box-shadow: var(--btn-success-box-shadow);
+    }
+}
+
+//Info Button 
+.btn-info {
+
+    color: var(--darken-primary2-color);
+    border-color: var(--darken-primary2-color);
+
+    &:focus {
+        color: var(--primary3-color);
+        background-color: var(-semantic-background-information-color);
+        border-color: var(--darken-primary2-color);
+    }
+
+    &:hover {
+        color: var(--darken-primary2-color);
+        background-color: var(-semantic-background-information-color);
+        border-color: var(--darken-primary2-color);
+    }
+}
+
+//Button Emphasized as per existing data
+
+//Primary Button
+
+.btn-primary {
+    color: var(--btn-primary-color);
+    background-color: var(--btn-primary-bg-color);
+    border-color: var(--btn-primary-bg-color);
+
+    &:focus {
+        color: var(--btn-primary-color);
+        background-color: var(--btn-primary-bg-color);
+        border-color: var(--btn-primary-bg-color);
+
+        &:after {
+            border: var(--btn-content-focus-width) var(--btn-content-focus-style) var(--btn-primary-content-focus-color);
+        }
+    }
+
+    &:hover {
+        color: var(--btn-primary-hover-color);
+        background-color: var(--btn-primary-hover-bg-color);
+        border-color: var(--btn-primary-hover-bg-color);
+    }
+}
+
+// Danger Button
+
+.btn-danger {
+    color: var(--semantic-foreground-negative-color);
+    border-color: var(--btn-danger-border-color);
+    background-color: var(--btn-danger-bg-color);
+    
+    &:focus {
+        color: var(--semantic-foreground-negative-color);
+        border-color: var(--semantic-foreground-negative-color);
+        background-color: var(--btn-danger-on-active-bg-color);
+    }
+
+    &:hover {
+        color: var(--semantic-foreground-negative-color);
+        border-color: var(--btn-danger-hover-border-color);
+        background-color: var(--btn-danger-hover-bg-color);
+        box-shadow: var(--btn-danger-box-shadow);
+    }
+}
+
+// Warning Button
+
+.btn-warning {
+
+    color: var(--ui-indication3);
+    border-color: var(--btn-warning-border-color);
+    background-color: var(--btn-warning-bg-color);
+
+    &:focus {
+        color: var(--ui-indication3);
+        border-color: var(--btn-warning-active-color);
+        background: var(--semantic-background-critical-color);
+    }
+
+    &:hover {
+        color: var(--ui-indication3);
+        border-color: var(--btn-warning-hover-border-color);
+        background: var(--btn-warning-hover-bg-color);
+        box-shadow: var(--btn-warning-box-shadow);
+    }
+}
+
+//Transparent Button
+
+.transparent-btn {
+    color: var(--darken-primary2-color);
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+
+    &:focus {
+        background: var(--btn-lite-bg-color);
+        color: var(--darken-primary2-color);
+        border-color: var(--btn-lite-border-color);
+        border-radius: 4px;
+        outline: var(--primary3-color);
+        outline-width: .0625rem;
+        text-decoration: none;
+        outline-color: var(--primary3-color);
+        min-width: 24px;
+        text-align: center;
+        box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25) ;
+    }
+
+    &:hover {
+        color: var(--darken-primary2-color);
+        border-color: var(--btn-lite-hover-border-color);
+        border-radius: 4px;
+        border-width: 1px;
+        background-color: var(--btn-lite-hover-bg-color);
+        text-decoration: none;
+        min-width: 24px;
+        text-align: center;
+        box-shadow: var(--btn-tranparent-box-shadow);
+    }
+}
+
+// Inverse Button
+
+.btn-inverse {
+    color: var(--darken-primary2-color);
+    border-color: var(--darken-primary2-color);
+    background-color: var(--primary3-color);
+
+    &:hover {
+        color: var(--darken-primary2-color);
+        border-color: var(--darken-primary2-color);
+        background-color: var(--btn-hover-background-color);
+    }
+
+    &:focus {
+        color: var(--primary3-color);
+        border-color: var(--darken-primary2-color);
+        background-color: var(--darken-primary2-color);
+    }
+}

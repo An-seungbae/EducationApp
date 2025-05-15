@@ -1,0 +1,69 @@
+.sap-layout {
+    // background-image: linear-gradient(to bottom, #A9C4DF, #E7ECF0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .region-sidebar {
+        background-color: var(--grayscale-application-content-background-color);
+    }
+
+    .region-topbar {
+        .topbar-content {
+            display: flex;
+            height: $topbar-minimalheight;
+        }
+
+        .topbar-content-left,
+        .topbar-content-center,
+        .topbar-content-right {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .topbar-content-center {
+            justify-content: center;
+        }
+
+        .mx-title {
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: var(--grayscale-text-and-titles-color);
+            font-size: 18px;
+        }
+
+        .topbar-btn {
+            width: $topbar-minimalheight;
+            height: 100%;
+            padding: 0;
+            color: var(--grayscale-text-and-titles-color);
+            border: 0;
+            background-color: transparent;
+
+            span {
+                display: inline-block;
+                width: $topbar-minimalheight - 8px;
+                height: $topbar-minimalheight - 8px;
+                margin: $spacing-small;
+                text-align: center;
+                vertical-align: middle;
+                border-radius: 50%;
+                text-shadow: 0 0 0.18px var(--primary6-color);
+                line-height: 36px;
+            }
+
+            &:hover span,
+            &:focus span {
+                background-color: rgba(var(--primary2-color), 0.15);
+            }
+        }
+
+        .topbar-logo {
+            padding: 0 32px 0 8px;
+        }
+    }
+}

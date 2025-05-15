@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Date Pickers and Links
+
+   Default Date Pickers and Mendix Buttons
+========================================================================== */
+
+// Color variations
+
+
+.mx-calendar .mx-calendar-day-selected{
+
+  
+    background: var(--primary2-color);
+    color: var(--primary3-color);
+    border: 2px dotted #fff;
+    border-radius: 2px; 
+    outline: 2px solid var(--primary2-color);
+
+}
+.mx-calendar .mx-calendar-day-selected:hover{
+
+    background: var(--primary2-color);
+    color: var(--primary3-color);
+    border-radius: 2px; 
+    border: 2px dotted #fff;
+    
+
+}
+
+
+.mx-calendar td:hover{
+      
+    background: var(--date-picker-hover-bg-color);
+    color: var(--date-picker-hover-color);
+    border-radius: 2px; 
+
+}
+
+/*======Links =========*/
+
+.link-disabled{
+    opacity: .4;
+    pointer-events: none;
+}
+.link-emphasized{
+    font-weight:700;
+}
+.link-inverted{
+    text-shadow: none;
+    background: var(--primary1-color);
+    padding: 10px;
+}

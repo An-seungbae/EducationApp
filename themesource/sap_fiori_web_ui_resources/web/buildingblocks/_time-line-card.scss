@@ -1,0 +1,125 @@
+/* ==========================================================================
+Time Line Card
+========================================================================== */
+
+
+.timeline_card .sapTimelinecardRightcontainer .mx-listview ul li::before {
+    content: '';
+    background-color: var(--grayscale-header-card-container-background-color) !important;
+    padding: 1px 1px;
+    border-right: none !important;
+    border-top: none !important;
+    height: 15px;
+    width: 15px;
+    border: 1px solid var(--grayscale-list-table-borders-color);
+    top: 10px;
+    left: -18px;
+    position: relative;
+    display: inline-block;
+    transform: rotate(45deg);
+    }
+    .timeline_card .sapTimelinecardRightcontainer .mx-listview ul li{
+    border: 1px solid var(--grayscale-list-table-borders-color) !important;
+    background-color: var(--grayscale-header-card-container-background-color);
+    margin: 20px;
+    }
+    .sapTimelinecardRightcontainer .mx-listview>ul>li:last-child {
+    border: 1px solid var(--grayscale-list-table-borders-color) !important;
+    }
+    .sapTimelinecardRightcontainer .mx-listview>ul>li:hover, .sapTimelinecardRightcontainer .mx-listview>ul>li:focus, .sapTimelinecardRightcontainer .mx-listview>ul>li:active {
+    outline: 0;
+    background-color: var(--grayscale-header-card-container-background-color);
+    }
+    
+    //Left Box CSS
+    .sapTimelinecardLeftbox li {
+    border: none !important;
+    background-color: var(--grayscale-header-card-container-background-color);
+    }
+    .sapTimelinecardLeftbox .mx-listview>ul>li:hover, .sapTimelinecardLeftbox .mx-listview>ul>li:focus, .sapTimelinecardLeftbox .mx-listview>ul>li:active {
+    outline: 0;
+    background-color: var(--grayscale-header-card-container-background-color);
+    }
+    
+    .sapTimelinecardContainer {
+    display: flex;
+    }
+    
+    .time-line-card-left-section ul li {
+    text-align: center;
+    background-color: transparent;
+    }
+    
+    .time-line-card-left-section ul li img {
+    margin: 0 auto;
+    }
+    .time-line-card-left-section ul li:after {
+    content: '';
+    height: 90px;
+    width: 1px;
+    background-color: var(--primary6-color) !important;
+    display: block;
+    left: 13px !important;    // overwrite atlas3 from 6 to 13
+    position: relative;
+    bottom: -10px;
+    }
+    .time-line-card-left-section ul li:last-child:after {
+    content: '';
+    height: 0px;
+    width: 1px;
+    background-color: var(--primary6-color) !important;
+    display: block;
+    left: 6px !important;
+    position: relative;
+    bottom: -10px;
+    }
+    
+    
+    .sapTimelinecardHeader h2 {
+    margin: 0;
+    }
+    
+    
+    
+    .timeline_card {
+    max-width: 270px;
+    margin: 0 auto;
+    border: 1px solid var(--grayscale-header-card-container-background-color);
+    padding: 10px !important;
+    }
+    .timeline_card {max-width: 270px;margin: 0 auto;}
+    
+    .time-line-card-left-section ul li {
+    padding: 0;
+    }
+    .timeline_card .sapTimelinecardRightcontainer .mx-listview ul li {
+    border: 1px solid var(--grayscale-header-card-container-background-color) !important;
+    margin: 0 0px 10px 10px;
+    padding:10px;
+    }
+    
+    .sapTimelinecardLeftbox {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: -27px;
+    }
+    @media only screen and (max-width: 768px) and (min-width: 320px) {
+    .sapTimelinecardContainer {
+    display: flex;
+    }
+    
+    }
+    @media only screen and (max-width: 400px) {
+    .sapTimelinecardContainer .row {
+    display: inline-flex;
+    }
+    }
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,109 @@
+/** sap atlas master detail layout styling*/
+.mx-sliding-container {
+    .region-sidebar .toggle-btn {
+        position: absolute;
+        margin-left: 290px;
+        background: linear-gradient(to bottom, var(--launchpad-gradients-top-color), var(--launchpad-gradients-Bottom-color));
+        height: inherit;
+        z-index: 99;
+        color: var(--primary2-color);
+        min-width: 10px;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .glyphicon.glyphicon-menu-right {
+        &::before {
+            content: '\e258';
+        }
+    }
+
+    .mx-scrollcontainer-open {
+        .glyphicon.glyphicon-menu-right {
+            &::before {
+                content: '\e257';
+            }
+        }
+    }
+
+    .mx-scrollcontainer-center {
+        padding-left: 8px;
+    }
+
+    .region-sidebar .toggle-btn::after {
+        margin-top: 25px;
+        position: absolute;
+        content: "";
+        left: 0;
+        height: 8rem;
+        width: 100%;
+        transition: all .1s ease-in;
+        background-repeat: no-repeat;
+        background-size: 0.0625rem 100%;
+        background-position-x: calc(50%);
+        background-image: linear-gradient(to bottom, var(--primary2-color), $verticalline-gradient-bottom-color);
+    }
+
+    .region-sidebar .toggle-btn::before {
+        margin-bottom: 17px;
+        position: absolute;
+        content: "";
+        left: 0;
+        height: 8rem;
+        width: 100%;
+        transition: all .1s ease-in;
+        background-repeat: no-repeat;
+        background-size: 0.0625rem 100%;
+        background-position-x: calc(50%);
+        background-image: linear-gradient(to top, var(--primary2-color), $verticalline-gradient-bottom-color);
+        bottom: 50%;
+    }
+
+    .mx-scrollcontainer:not(.mx-scrollcontainer-open)>.region-sidebar {
+        .toggle-btn {
+            margin-left: 0;
+        }
+    }
+}
+
+/** Master detail layout letterbox styling*/
+.sap-atlas-layout-default-letterbox {
+    width: 1280px;
+    max-width: 100%;
+    margin: auto;
+    background-color: var(--grayscale-application-content-background-color);
+    box-shadow: 0 0 24px $letterbox-shadow-color;
+}
+
+
+@media (max-width: $screen-sm-max) {
+    .mx-sliding-container {
+        .region-sidebar .toggle-btn {
+            height: 30px;
+            background: transparent;
+        }
+
+        .glyphicon.glyphicon-menu-right {
+            &::before {
+                content: '\e236';
+            }
+        }
+
+        .mx-scrollcontainer-open {
+            .glyphicon.glyphicon-menu-right {
+                &::before {
+                    content: '\e236';
+                }
+            }
+        }
+
+        .region-sidebar .toggle-btn {
+
+            &::before,
+            &::after {
+                background: transparent;
+            }
+        }
+    }
+}

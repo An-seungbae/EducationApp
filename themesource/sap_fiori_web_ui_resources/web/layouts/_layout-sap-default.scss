@@ -1,0 +1,15 @@
+.sap-layout-default {
+    .region-content {
+        background-color: var(--grayscale-application-content-background-color);
+    }
+}
+
+.sap-layout-default-letterbox {
+    .region-content {
+        width: 1280px;
+        max-width: 100%;
+        margin: auto;
+        background-color: var(--grayscale-application-content-background-color);
+        box-shadow: 0 0 24px $letterbox-shadow-color;
+    }
+}

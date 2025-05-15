@@ -1,0 +1,18 @@
+/* ==========================================================================
+    Dashboard Components
+========================================================================== */
+
+.dashboardgroup {
+    padding: 0 ($spacing-small*2) ($spacing-small*2);
+    .sap-tile {
+        margin: 0 $spacing-small ($spacing-small*2);
+    }
+}
+.dashboardgroup-title {
+    overflow: hidden;
+    padding: ($spacing-medium/2) $spacing-medium $spacing-medium;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 0.125rem #FFFFFF;
+    font-size: $font-size-h4;
+}

@@ -1,0 +1,69 @@
+/* ==========================================================================
+    List
+========================================================================== */
+
+.sap-list {
+    .mx-listview {
+        position: relative;
+
+        .mx-listview-searchbar {
+            position: absolute;
+            top: -65px;
+            right: 0;
+        }
+
+        // .mx-listview-searchbar{
+        //     max-width: 250px;
+        //     margin-left: auto;
+        // }
+        .mx-listview-item {
+            cursor: pointer;
+
+            &:hover {
+                background-color: $list-bg-hover;
+            }
+
+            &:active,
+            &:focus,
+            &:active:focus {
+                outline: none;
+                background-color: $list-activefocus;
+            }
+        }
+    }
+}
+
+//List Border
+.listview-bordered h4, .sap-list h4, .listview-item h4, .sap-list h5 {
+    margin: 0;
+}
+.listview-item img {
+    margin-top: 10px;
+}
+.listview-item-multiline h4 {
+    margin: 5px 0px;
+}
+.listview-bordered .form-group {
+    margin-bottom: 0;
+}
+.listview-bordered .form-group {
+    margin-bottom: 0;
+}
+
+.listview-item h4, .listview-item h5 {
+    color: --primary6-color;
+}
+
+//== Elements
+//-------------------------------------------------------------------------------------------------------------------//
+
+.sap-listview-categories {
+    margin-top: 50px;
+    padding: 5px 15px 5px 15px !important;
+    border: 1px solid $list-header-border;
+    border-bottom: 0;
+    background-color: $list-header-bg;
+}
+
+//== Variations
+//-------------------------------------------------------------------------------------------------------------------//

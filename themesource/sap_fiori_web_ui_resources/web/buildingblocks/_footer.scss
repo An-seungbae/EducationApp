@@ -1,0 +1,42 @@
+/* ==========================================================================
+    Footer
+========================================================================== */
+
+.sap-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    color: $footer-color;
+    //border-top: 1px solid $footer-border;
+    //border-bottom: 1px solid $footer-border;
+    background-color: #ffffff !important;
+    text-shadow: 0 0 2px #000000;
+    font-size: 14px;
+
+    .btn {
+        margin-right: $spacing-small;
+        margin-left: $spacing-small;
+    }
+
+    .btn-danger {
+        color: $footer-btn-danger-color;
+        border-color: $footer-btn-danger-color;
+        background-color: $footer-btn-danger-bg;
+        &:hover,
+        &:focus {
+            color: $footer-btn-danger-color;
+            border-color: $footer-btn-danger-color;
+            background-color: $footer-btn-danger-bg-hover;
+        }
+    }
+}
+
+
+
+//== Elements
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+//== Variations
+//-------------------------------------------------------------------------------------------------------------------//

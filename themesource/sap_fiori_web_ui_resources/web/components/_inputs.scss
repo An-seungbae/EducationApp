@@ -1,0 +1,307 @@
+/* ==========================================================================
+   Inputs
+
+   The form-control class style all inputs
+========================================================================== */
+.form-control {
+    &:hover {
+        border-color: var(--input-field-hover-border-color);
+    }
+    &:focus,
+    &:-webkit-autofill {
+        color: var(--grayscale-subtitles-and-labels-color);
+        background: var(--grayscale-header-card-container-background-color) !important;
+    }
+
+    color: var(--grayscale-subtitles-and-labels-color);
+    background: var(--grayscale-header-card-container-background-color);
+}
+
+.form-control-static {
+    padding: 0;
+    border: 0;
+    color: var(--grayscale-subtitles-and-labels-color);
+}
+
+.control-label {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    //margin-top: $spacing-medium !important;
+    margin-top: 8px;
+    white-space: normal;
+}
+
+.form-group {
+    .control-label {
+        color: var(--grayscale-text-and-titles-color);
+    }
+}
+
+// Orientation
+.form-horizontal {
+    .form-group {
+        padding: 4px 0;
+    }
+
+    .form-control-static {
+        padding: $spacing-small;
+    }
+
+    .control-label {
+        padding: $spacing-small;
+    }
+}
+
+// overwrite atlas3
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #EEEEEE;
+}
+
+//CSS Starts here
+
+//Check Box
+input[type='checkbox']:checked:before {
+    background-color: transparent;
+}
+
+input[type='checkbox']:before {
+    content: "";
+    min-width: 1.375rem;
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 1rem;
+    font-size: var(--sapFontLargeSize, 1rem);
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: SAP-icons;
+    background-color: --grayscale-header-card-container-background-color;
+    margin-right: .6875rem;
+    margin-left: 0;
+    color: var(--darken-primary2-color);
+    border: .0625rem solid var(--primary5-color);
+    border-radius: .125rem;
+
+}
+
+input[type='checkbox']:after {
+    width: 16px;
+    height: 6px;
+    margin: 6px 3px;
+    transform: rotate(-45deg);
+    pointer-events: none;
+    border: 3px solid var(--darken-primary2-color);
+    border-top: 0;
+    border-right: 0;
+}
+
+input[type='file']:focus,
+input[type='radio']:focus,
+input[type='checkbox']:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+//Radio Buttons
+input[type='radio']:after {
+    top: 60%;
+    left: 60%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-color: var(--darken-primary2-color) !important;
+}
+
+input[type='radio']:before {
+    width: 120%;
+    height: 120%;
+    content: '';
+    border: 1px solid var(--grayscale-borders-and-derived-controls-color);
+    background-color: var(--grayscale-header-card-container-background-color);
+}
+
+input[type='radio']:checked:before {
+    border-color: var(--darken-primary2-color);
+}
+
+// Form Input Text 
+.form-group input[type='text'] {
+
+    /*height:36px;
+padding:10px;
+*/
+    padding-left: 0.25rem;
+    height: 3.5rem;
+    margin-top: 0.25rem;
+    padding: 0.625rem;
+    background-color: var(--input-field-bg-color);
+}
+
+//Form Control select
+.mx-dropdown {
+    select {
+        background-color: var(--grayscale-header-card-container-background-color) !important;
+    }
+}
+
+select.form-control {
+    line-height: 1.4;
+    line-height: var(--sapContent_LineHeight, 1.4);
+    font-family: $font-family-base;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: $form-group-margin-bottom;
+    border: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--grayscale-text-and-titles-color);
+    background-color: var(--grayscale-header-card-container-background-color);
+    border-style: solid;
+    border-width: .0625rem;
+    border-color: #ced0d3;
+    //border-radius: .125rem;
+    outline: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    height: 31.3px;
+    appearance: none;
+    width: 100%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzOSAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNGQUZCRkMiIGQ9Ik0xIDBoMzd2MzZIMXoiLz48cGF0aCBkPSJNMSAwdjM2TTM4IDB2MzYiIHN0cm9rZT0iI0NFQ0VEMCIvPjxwYXRoIGQ9Ik0yNi45MTkgMTYuODQzbC03LjY2NyA4LjA1OGEuMzY0LjM2NCAwIDAgMS0uMjUzLjA5OS4zNjQuMzY0IDAgMCAxLS4yNTItLjFsLTcuNjY0LTguMDU3YS4yODMuMjgzIDAgMCAxIC4wMzQtLjQyOGwxLjcyMS0xLjM0MWEuMzUyLjM1MiAwIDAgMSAuMjE4LS4wNzRsLjAyNS4wMDFjLjA4OC4wMDYuMTcuMDQ1LjIyOC4xMDdMMTkgMjEuMjAybDUuNjkzLTYuMDk0Yy4xMi0uMTMuMzMtLjE0NS40Ny0uMDM0bDEuNzIyIDEuMzQxYS4yOTcuMjk3IDAgMCAxIC4xMTUuMjA3LjI4My4yODMgMCAwIDEtLjA4LjIyMXoiIGZpbGw9IiMwQTZFRDEiLz48L2c+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: calc(100% + .0625rem) center;
+    padding-right: 3rem;
+    &:hover {
+        border-color: var(--input-field-hover-border-color);
+    }
+    &:focus {
+        outline-color: var(--input-field-focus-border-color);
+    }
+    option {
+        color: var(--grayscale-text-and-titles-color);
+        background-color: var(--grayscale-header-card-container-background-color);
+    }
+}
+.form-group input {
+    &:hover {
+        border-color: var(--input-field-hover-border-color);
+    }
+}
+.form-control:not([readonly]):focus {
+    border-color: var(--input-field-focus-border-color);
+    outline: var(--outline-size);
+    outline-style: var(--outline-style-solid);
+    outline-offset: var(--outline-offset);
+    outline-color: var(--outline-color);
+}
+//Required Astrick mark
+.required .control-label:after {
+    color: var(--semantic-foreground-negative-color);
+    content: " *";
+}
+
+//INFO Label Css 
+.info-label {
+    line-height: 1.4;
+    font-family: $info-label-font-family;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 1.125rem;
+    height: 1.125rem;
+    min-width: 1.125rem;
+    max-width: 100%;
+    font-size: var(--sapFontSmallSize, .75rem);
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-width: .063rem;
+    border-style: solid;
+    color: var(--grayscale-text-and-titles-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fd-info-label--numeric {
+    padding: 10px;
+    line-height: .4;
+    border-color: var(--ui-indication3);
+}
+
+.fd-info-label--icon {
+    align-items: center;
+    padding: 10px;
+    line-height: .4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--ui-indication3);
+}
+
+.fd-info-label--accent {
+    border-color: var(--ui-indication3);
+}
+
+
+.sap-form-content {
+    .pull-left {
+        float: none !important;
+    }
+
+    .spacing-outer-left-none {
+        margin: 0px !important;
+    }
+}
+
+//Calendar Calendar day selected
+
+.mx-calendar .mx-calendar-day-selected,
+.mx-calendar td:hover {
+    border-radius: .25rem;
+}
+
+//RadioButtons new
+input[type='radio']:not(:disabled):not(:checked):hover:after {
+    opacity: 0;
+}
+
+input[type='radio']:hover:before {
+    border: 1px solid #0854a0 !important;
+}
+
+//CheckBox new
+.mx-checkbox label {
+    margin: 1px 3px 2px 2px;
+} 
+
+
+.form-group .control-label{
+    text-align: right;    // overwrite atlas3
+    color:var(--grayscale-subtitles-and-labels-color);
+}
+
+
+.form-control-static, .form-group div[class*="textBox"] > .control-label, .form-group div[class*="textArea"] > .control-label, .form-group div[class*="datePicker"] > .control-label{
+    color:var(--grayscale-subtitles-and-labels-color);
+
+}
+
+.mx-calendar {
+    background-color: var(--grayscale-header-card-container-background-color);
+    color: var(--grayscale-text-and-titles-color);
+
+}

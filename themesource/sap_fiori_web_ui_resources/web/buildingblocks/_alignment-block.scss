@@ -1,0 +1,38 @@
+/* ==========================================================================
+    Alignment Blocks
+========================================================================== */
+
+.flexcontainer {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .flexitem {
+        margin-right: $gutter-size;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .flexitem-main {
+        overflow: hidden;
+        flex: 1;
+    }
+
+    .col-left {
+        flex-direction: row !important;
+    }
+
+}
+
+.flex-center {
+    align-items: center;
+}
+
+.sap-pageheader {
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, .15), inset 0 -0.0625rem 0 0 #d9d9d9;
+    box-sizing: border-box;
+}

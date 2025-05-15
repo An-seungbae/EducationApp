@@ -1,0 +1,337 @@
+/* ==========================================================================
+    List Card 
+========================================================================== */
+
+.saplist_card {
+    position: relative;
+    flex-shrink: 0;
+    background: var(--grayscale-header-card-container-background-color);
+    color: var(--grayscale-text-and-titles-color);
+    z-index: 2;
+    padding: 1rem;
+    outline: none;
+    box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    border: .0625rem solid transparent;
+    box-sizing: border-box;
+}
+
+.saplistcardheader {
+    position: relative;
+    flex-shrink: 0;
+    background: var(--grayscale-header-card-container-background-color);
+    border-bottom: .0625rem solid  var(--grayscale-header-container-borders-color);
+    z-index: 2;
+    padding: 1rem;
+    display: flex;
+    outline: none;
+}
+
+.sapFCardContent {
+  
+
+    &>ul {
+        margin: 0;
+
+        .mx-listview-empty {
+            border-style: none;
+            background-color: transparent;
+        }
+
+ //Accent Colors
+        $colors: #E09D00,  #E6600D,  #C14646,  #AB218E,  #678BC7, #0092D1, #1A9898, #759421,  #925ACE, #647987;
+        $border-value: 5px solid;
+
+        @for $i from 1 through length($colors) {
+            li:nth-child(#{length($colors)}n+#{$i}) {
+                border-left: 5px solid lighten(nth($colors, $i), 20%);
+                background: var(--grayscale-header-card-container-background-color);
+                color: var(--grayscale-text-and-titles-color);
+            }
+        }
+
+        &.selected {
+            background-color: $grid-bg-selected;
+
+            &:hover {
+                background-color: $grid-bg-selected-hover;
+            }
+        }
+    }
+
+}
+
+//List Card Object Css
+.saplist-object-card {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    box-sizing: border-box;
+    background: var(--grayscale-header-card-container-background-color);
+    color: var(--grayscale-text-and-titles-color);
+    box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    border: .0625rem solid transparent;
+    width: 100%;
+    height: auto;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+    min-height: 5rem;
+}
+
+.sap-list-object-header {
+    position: relative;
+    flex-shrink: 0;
+    border-bottom: .0625rem solid var(--grayscale-header-container-borders-color);
+    z-index: 2;
+    padding: 20px !important;
+    display: flex;
+    outline: none;
+}
+
+.sap-list-object-details-container {
+    padding: 16px 16px 0px 16px !important;
+
+    span {
+        display: block;
+        box-sizing: border-box;
+        white-space: pre-line;
+        word-wrap: break-word;
+        cursor: text;
+        font-family: "72", "72full", Arial, Helvetica, sans-serif;
+        line-height: normal;
+        color: var(--grayscale-text-and-titles-color);
+        background: var(--grayscale-header-card-container-background-color);
+    }
+    .mx-listview > ul > li:hover, .mx-listview > ul > li:focus, .mx-listview > ul > li:active{
+        background: var(--grayscale-header-card-container-background-color);
+        color: var(--grayscale-text-and-titles-color);
+    }
+    .mx-listview>ul>li:last-child {
+        border: none;
+    }
+    .mx-listview{
+        
+        ul > li{
+            background: var(--grayscale-header-card-container-background-color);
+            color: var(--grayscale-text-and-titles-color);
+        }
+    }
+
+}
+
+.sap-list-object-details-organization-container {
+
+    padding: 16px 16px 0px 16px !important;
+
+    span {
+        display: block;
+    }
+    .mx-listview > ul > li:hover, .mx-listview > ul > li:focus, .mx-listview > ul > li:active{
+        background: var(--grayscale-header-card-container-background-color);
+        color: var(--grayscale-text-and-titles-color);
+    }
+    .mx-listview>ul>li:last-child {
+        border: none;
+    }
+    ul > li{
+        background: var(--grayscale-header-card-container-background-color);
+        color: var(--grayscale-text-and-titles-color);
+    }
+}
+
+//Component Card
+
+.sapcomponent-card {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    box-sizing: border-box; 
+    box-shadow: 0px 0px 2px 1px #d1d1d1;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
+    border-radius: .25rem;
+    background: var(--grayscale-header-card-container-background-color);
+    color: var(--grayscale-text-and-titles-color);
+    box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    border: .0625rem solid transparent;
+    width: 100%;
+    height: auto;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+    min-height: 5rem;
+}
+
+.sapcomponent-card-header {
+
+    position: relative;
+    flex-shrink: 0;
+    background: var(--grayscale-header-card-container-background-color);
+    border-bottom: .0625rem solid var(--grayscale-header-container-borders-color);
+    z-index: 2;
+    padding: 16px !important;
+    display: flex;
+    outline: none;
+}
+
+.mx-name-layoutGrid16.mx-layoutgrid.mx-layoutgrid-fluid.sapcomponent-card {
+    width: auto;
+}
+
+
+
+//Table Card 
+
+.sapTableCardHeader {
+    position: relative;
+    flex-shrink: 0;
+    background: var(--grayscale-header-card-container-background-color);
+    border-bottom: 1px solid var(--grayscale-header-container-borders-color);
+    z-index: 2;
+    padding: 16px;
+    display: flex;
+    outline: none;
+    h2, span{
+        padding-left: 20px;
+    }
+}
+
+.sapTableCardTableContainer {
+    position: relative;
+}
+
+.saptablecardContainer table th .mx-datagrid-head-caption {
+    padding: 10px 10px 10px 0px;
+
+}
+
+.saptablecardContainer tbody tr td:first-child {
+    font-weight: 600;
+
+}
+
+.saptablecardContainer table tbody tr td {
+
+    border-bottom-width: 0px;
+    padding: 16px 16px 16px 16px;
+}
+
+.saptablecardContainer {
+
+    .mx-name-head-row {
+        background: var(--grayscale-header-card-container-background-color);
+        border-bottom: 1px solid var(--grayscale-header-container-borders-color);
+        vertical-align: middle;
+    }
+
+    & .mx-grid-controlbar {
+        margin-top: 0px;
+
+        & .mx-grid-pagingbar {
+            display: none;
+        }
+
+
+    }
+
+}
+
+
+//List Card post
+.sapFlist_card  h2 {
+    margin: 0;
+}
+.sapFlist_card .col-lg-9 {
+    padding: 10px;
+}
+.sapFCardContent ul>li {
+    border: 0px;
+}  
+
+//List card Object
+@media screen and (min-width: 500px) {
+.saplist_card {
+    width: 368px;
+}
+}
+
+
+
+.sap-list-object-header h1, .sap-list-object-header h4 {
+    margin: 0;
+}
+.saplist-object-card h2.mx-text {
+    margin-bottom: 10px;
+}
+
+.sap-list-object-details-container .mx-listview ul li{
+    padding-left: 0;
+	padding-top: 0;
+}
+.sap-list-object-details-organization-container .mx-listview ul li {
+    padding-left: 0;
+}
+.saplist-object-card {
+    width: 464px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sapFCardContent ul li {
+    margin: 0px 3px 3px 2px;
+}
+
+
+//Component Card
+@media screen and (min-width: 500px) {
+.sapcomponent-card {
+    width: 368px !important;
+    height: 100%;
+}
+}
+
+//Table Card
+.sapTableCardHeader h2.mx-text {
+    margin: 0;
+}
+.sapTableCardHeader {
+    padding-bottom: 10px !important;
+}
+.saptablecardContainer table th .mx-datagrid-head-caption {
+    padding: 0;
+}
+.saptablecardContainer table tbody tr td {
+    border-bottom-width: 0px;
+    padding: 3px 10px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+
+    .form-group>[class*='col-'] {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .mx-datagrid table {
+        table-layout: auto;
+    }
+
+    .sapTableCardTableContainer .mx-grid-content {
+        overflow: scroll;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .sap-list-object-details-container .mx-listview li {
+        padding-left: 0;
+    }
+
+    .sap-list-object-details-organization-container .mx-listview ul li {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Tree
+========================================================================== */
+.mx-navigationtree {
+    background-color: $navsidebar-color;
+
+    /* Every navigation item */
+    .navbar-inner>ul {
+        margin: 0;
+        padding-left: 0;
+
+        &>li {
+            padding: 0;
+            border-style: none;
+
+            &>a {
+                display: flex;
+                align-items: center;
+                height: $navigation-item-height;
+                padding: $navigation-item-padding;
+                color: $navigation-color;
+                border-bottom: 1px solid $navigation-border-color;
+                border-radius: 0;
+                background-color: $navigation-bg;
+                text-shadow: none;
+                font-size: $navigation-font-size;
+                font-weight: $font-weight-normal;
+
+                .caret {
+                    border-top-color: $navigation-color;
+                    border-bottom-color: $navigation-color;
+                }
+
+                img {
+                    width: 20px; // Default size
+                    height: auto;
+                    margin-right: 0.5em;
+                }
+
+                .glyphicon {
+                    top: 0;
+                    margin-right: 0.5em;
+                    vertical-align: middle;
+                    font-size: $navigation-glyph-size;
+                }
+            }
+
+            a:hover,
+            a:focus,
+            a.active {
+                text-decoration: none;
+                color: $navigation-color-hover;
+                background-color: $navigation-bg-hover;
+
+                .caret {
+                    border-top-color: $navigation-color-active;
+                    border-bottom-color: $navigation-color-active;
+                }
+				
+            }
+
+            a.active {
+                color: $navigation-color-active;
+                border-left-color: $navigation-color-active;
+                background-color: $navigation-bg-active;
+            }
+        }
+    }
+
+    /* Sub navigation item specific */
+    li.mx-navigationtree-has-items {
+        &>ul {
+            margin: 0;
+            padding-left: 0;
+            background-color: $navigation-sub-bg;
+
+            li {
+                margin: 0;
+                padding: 0;
+                border: 0;
+
+                a {
+                    padding: 12px 20px 12px 25px;
+                    text-decoration: none;
+                    color: $navigation-sub-color;
+                    border: 0;
+                    background-color: $navigation-sub-bg;
+                    text-shadow: none;
+                    font-size: $navigation-sub-font-size;
+                    font-weight: $font-weight-normal;
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        color: $navigation-sub-color-hover;
+                        outline: 0;
+                        background-color: $navigation-sub-bg-hover;
+                    }
+
+                    &.active {
+                        color: $navigation-sub-color-active;
+                        border: 0;
+                        background-color: $navigation-sub-bg-active;
+                    }
+					
+					img {
+						width: 20px; // Default size
+						height: auto;
+						margin-right: 0.5em;
+					}
+
+					.glyphicon {
+						top: 0;
+						margin-right: 0.5em;
+						vertical-align: middle;
+						font-size: $navigation-glyph-size;
+					}
+					
+					
+                }
+            }
+        }
+    }
+
+    /* remove focus */
+    &:focus {
+        outline: 0;
+    }
+}
+
+.mx-navigationtree {
+    background-color: $nav-hover-color;
+}
+
+.mx-navigationtree .navbar-inner>ul>li>a {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 5px 15px;
+    color: var(--grayscale-text-and-titles-color);
+    border-bottom: 1px solid $navigation-border-color;
+    border-radius: 0;
+    background-color: var(--grayscale-header-card-container-background-color);
+    text-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+
+    /*&:hover {
+        color: $nav-hover-color;
+        background-color: $nav-background;
+    }
+
+    &:focus {
+        color: $nav-color;
+        background-color: $nav-focus;
+    }*/
+}
+
+.mx-navigationtree .navbar-inner>ul>li>a .caret {
+    border-top-color: $nav-color;
+    border-bottom-color: $navigation-border-color;
+}
+
+.mx-navigationtree li.mx-navigationtree-has-items>ul li a {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 5px 15px;
+    color: var(--grayscale-text-and-titles-color);
+    border: 1px solid $navigation-border-color;
+    border-radius: 0;
+    background-color: $nav-hover-color;
+    text-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+
+    &:hover {
+        color: $nav-hover-color;
+        background-color: $nav-background;
+    }
+
+.mx-navigationtree li.mx-navigationtree-has-items>ul li a.active {
+    background-color: #0854a0 !important;
+    color: #fff;
+}
+
+.mx-navigationtree li.mx-navigationtree-has-items>ul li:hover a {
+    background-color: #f4f4f4 !important;
+    color: #000 !important;
+} 
+
+    &:focus {
+        color: $nav-color;
+        background-color: $nav-focus;
+    }
+}

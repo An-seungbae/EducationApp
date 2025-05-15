@@ -1,0 +1,1195 @@
+.theme-quartz-light {
+
+    // Sap SAP Fiori Primary Colors
+    --primary1-color: #354a5f;
+    --primary2-color: #0a6ed1;
+    --darken-primary2-color: #0854A0;
+    --primary3-color: #ffffff;
+    --primary4-color: #edeff0;
+    --primary5-color: #89919a;
+    --primary6-color: #32363a;
+    --primary7-color: #6a6d70;
+
+    //SAP Fiori Launchpad Gradient
+    --launchpad-gradients-top-color: #dfe3e4;
+    --launchpad-gradients-Bottom-color: #f3f4f5;
+
+    //Accent Colors
+    --accent1-color: #d08014;
+    --accent2-color: #d04343;
+    --accent3-color: #db1f77;
+    --accent4-color: #c0399f;
+    --accent5-color: #6367de;
+    --accent6-color: #286eb4;
+    --accent7-color: #0f828f;
+    --accent8-color: #7ca10c;
+    --accent9-color: #925ace;
+    --accent10-color: #647987;
+
+    //Grayscale
+    --grayscale-text-and-titles-color: #32363a;
+    --grayscale-subtitles-and-labels-color: #6a6d70;
+    --grayscale-prompt-placeholder-text-color: #74777a;
+    --grayscale-borders-and-derived-controls-color: #89919a;
+    --grayscale-header-container-table-borders-color: #d9d9d9;
+    --grayscale-list-table-borders-color: #e5e5e5;
+    --grayscale-column-header-background-color: #f2f2f2;
+    --grayscale-application-content-background-color: #f7f7f7;
+    --grayscale-header-card-container-background-color: #ffffff;
+
+    //Semantic Foreground Colors
+    --semantic-foreground-negative-color: #bb0000;
+    --semantic-foreground-critical-color: #e9730c;
+    --semantic-foreground-positive-color: #107e3e;
+    --semantic-foreground-neutral-color: #6a6d70;
+    --semantic-foreground-information-color: #0a6ed1;
+
+    //Semantic Background Colors
+    --semantic-background-negative-color: #ffebeb;
+    --semantic-background-critical-color: #fef7f1;
+    --semantic-background-positive-color: #f1fdf6;
+    --semantic-background-neutral-color: #f4f4f4;
+    --semantic-background-information-color: #f5faff;
+
+    //Indication Colors
+    --ui-indication1: #880000;
+    --ui-indication2: #bb0000;
+    --ui-indication3: #e9730c;
+    --ui-indication4: #107e3e;
+    --ui-indication5: #0a6ed1;
+    --ui-indication6: #0f828f;
+    --ui-indication7: #925ace;
+    --ui-indication8: #c0399f;
+
+    /* New Variable  Without find colors in Sap themes*/
+    --btn-default-bg-color: #fff;
+    --btn-default-border-color:#0854A0;
+    --btn-default-hover-bg-color: #ebf5fe;
+    --btn-default-hover-border-color: #0854a0;
+    --btn-hover-background-color: #ebf5fe;
+    --btn-active-on-active-bg-color: #0d6733;
+    --btn-warning-active-color: #d1670b;
+    --btn-warning-on-active-bg-color: #a20000;
+    --btn-warning-border-color: #df6e0c;
+    --btn-warning-bg-color: #fff;
+    --btn-warning-hover-border-color: #df6e0c;
+    --btn-warning-hover-bg-color: #fef7f1;
+    --btn-success-bg-color: #fff;
+    --btn-success-border-color: #107e3e;
+    --btn-success-hover-bg-color: #f1fdf6; 
+    --btn-success-hover-border-color: #107e3e;
+    --btn-danger-border-color: #bb0000;
+    --btn-danger-bg-color: #fff;
+    --btn-danger-hover-border-color: #bb0000;
+    --btn-danger-hover-bg-color: #ffebeb;
+    --btn-lite-bg-color: #ebf5fe;
+    --btn-lite-border-color:#0854a0;
+    --btn-lite-hover-border-color: #0854a0;
+    --btn-lite-hover-bg-color: #ebf5fe;
+    --btn-primary-color:  #fff;
+    --btn-primary-bg-color: #0a6ed1;
+    --btn-primary-hover-color: #fff;
+    --btn-primary-hover-bg-color:  #085caf;
+    --list-hover-bg-color: #f5f5f5;
+    --table-border-color: #ced0d3;
+    --btn-default-border-color:#0854A0;
+    --input-field-bg-color: #fff;
+    --input-field-hover-bg-color: #fff;
+    --input-field-hover-border-color: #0854a0;
+    --switch-track-bg-color: #ededed;
+    --switch-track-selected-bg-color: #ebf5fe; 
+
+    //Button inner-border
+    --btn-outline-offset: 0.0625rem;
+    --btn-content-focus-color: #000;
+    --btn-primary-content-focus-color: #fff;
+    --btn-content-focus-style: dotted;
+    --btn-content-focus-width: .125rem;
+    --btn-focus-border-radius: .375rem;
+
+    // Box shadow
+    --bax-shadow-color: #D1E0EE;
+    --bax-shadow: rgba(0, 0, 0, 0.15);
+    --tile-shadow: rgba(0, 0, 0, .85);
+    --content-shadow: 0 0 0 .0625rem rgba(0, 0, 0, .42), 0 .125rem .5rem 0 rgba(0, 0, 0, .3);
+
+    // Progress Bar
+    --progress-bar-border-radius: unset;
+    --progress-bar-border-color: #89919a;
+    --progress-bg-color: #fff;
+    //--progress-default-bg-color: #d5dadd;
+    --progress-bar-default-bg-color: #788fa6;
+    --progress-bar-danger-bg-color: #bb0000;
+
+    //Navigation Color New
+    --nav-background: $brand-primary;
+    --nav-hover-color: #d8e8f7;
+    --nav-selected: #e5f0fa;
+    --nav-focus: #e5f0fa;
+    --date-picker-hover-bg-color:#f5f5f5;
+    --date-picker-hover-color:#32363a;
+
+    --loader-bg-img: url('/resources/images/loader.gif');
+
+    --shell-bar-bg-color: #354a5f; 
+    --shell-bar-hover-color: #283848;
+    --shell-bar-text-color:#ffffff;
+
+}
+
+.theme-quartz-dark {
+
+    // Sap SAP Fiori Primary Colors
+    --primary1-color: #354a5f;
+    --primary2-color: #91C8F6;
+    --darken-primary2-color: #91c8f6;
+    --primary3-color: #29313A;
+    --primary4-color: #232A31;
+    --primary5-color: #8696A9;
+    --primary6-color: #FAFAFA;
+    --primary7-color: #D3D7D9;
+
+    //SAP Fiori Launchpad Gradient
+    --launchpad-gradients-top-color: #181D22;
+    --launchpad-gradients-Bottom-color: #272F37;
+
+    //Accent Colors
+    --accent1-color: #FFC847;
+    --accent2-color: #E7A1A1;
+    --accent3-color: #F37AA2;
+    --accent4-color: #E269C9;
+    --accent5-color: #8CA7D5;
+    --accent6-color: #6BD3FF;
+    --accent7-color: #7FC6C6;
+    --accent8-color: #B2E484;
+    --accent9-color: #B995E0;
+    --accent10-color: #B0BCC5;
+
+    //Grayscale
+    --grayscale-text-and-titles-color: #FAFAFA;
+    --grayscale-subtitles-and-labels-color: #D3D7D9;
+    --grayscale-prompt-placeholder-text-color: #B8BEC1;
+    --grayscale-borders-and-derived-controls-color: #8696A9;
+    --grayscale-header-container-table-borders-color: #3A4552;
+    --grayscale-column-header-background-color: #232931;
+    --grayscale-application-content-background-color: #1C2228;
+    --grayscale-header-card-container-background-color: #29313A;
+    --grayscale-list-table-borders-color: #e5e5e5;
+
+    //Semantic Foreground Colors
+    --semantic-foreground-negative-color: #bb0000;
+    --semantic-foreground-critical-color: #FABD64;
+    --semantic-foreground-positive-color: #ABE2AB;
+    --semantic-foreground-neutral-color: #D3D7D9;
+    --semantic-foreground-information-color: #91C8F6;
+
+    //Semantic background Colors
+    --semantic-background-negative-color: #3B0000;
+    --semantic-background-critical-color: #2B1A01;
+    --semantic-background-positive-color: #153C15;
+    --semantic-background-neutral-color: #5C666B;
+    --semantic-background-information-color: #062E4F;
+
+    //Indication Colors
+    --ui-indication1: #FF5555;
+    --ui-indication2: #FF8888;
+    --ui-indication3: #FABD64;
+    --ui-indication4: #ABE2AB;
+    --ui-indication5: #91C8F6;
+    --ui-indication6: #7fc6c6;
+    --ui-indication7: #b995e0;
+    --ui-indication8: #e269c9;
+
+    /* New Variable  Without find colors in Sap themes*/
+    --btn-default-bg-color: #29313a;
+    --btn-default-border-color: #91c8f6;
+    --btn-default-hover-bg-color: #062e4f;
+    --btn-default-hover-border-color: #91c8f6;
+    --btn-hover-background-color: #062e4f;
+    --btn-active-on-active-bg-color: #98db98;
+    --btn-warning-active-color: #d1670b;
+    --btn-warning-on-active-bg-color: #a20000;
+    --btn-warning-border-color: #fabd64;
+    --btn-warning-bg-color: #29313a;
+    --btn-warning-hover-border-color: #fabd64;
+    --btn-warning-hover-bg-color: #2b1a01;
+    --btn-success-bg-color: #29313a;
+    --btn-success-border-color: #abe2ab;
+    --btn-success-hover-bg-color: #153c15;
+    --btn-success-hover-border-color: #abe2ab;
+    --btn-danger-border-color: #ff8888;
+    --btn-danger-bg-color: #29313a;
+    --btn-danger-hover-border-color: #ff8888;
+    --btn-danger-hover-bg-color: #3b0000;
+    --btn-lite-bg-color: #062e4f;
+    --btn-lite-border-color: #91c8f6;
+    --btn-lite-hover-border-color: #91c8f6;
+    --btn-lite-hover-bg-color: #062e4f;
+    --btn-primary-color:  #fff;
+    --btn-primary-bg-color: #1b8dec;
+    --btn-primary-hover-color: #fafafa;
+    --btn-primary-hover-bg-color:  #2e96ee;
+    --list-hover-bg-color: #2f3943;
+    --table-border-color: #ced0d3;
+    --btn-default-border-color:#91c8f6;
+    --input-field-bg-color: #29313a;
+    --input-field-hover-border-color: #91c8f6;
+    --switch-track-bg-color: #38434f;
+    --switch-track-selected-bg-color: #062e4f;
+    
+
+    //Button inner-border
+    --btn-outline-offset: 0.0625rem;
+    --btn-content-focus-color: #fff;
+    --btn-primary-content-focus-color: #000;
+    --btn-content-focus-style: dotted;
+    --btn-content-focus-width: .125rem;
+    --btn-focus-border-radius: .375rem;
+
+    // Box shadow
+    --bax-shadow-color: #D1E0EE;
+    --bax-shadow: rgba(255, 255, 255, 0.15);
+    --tile-shadow: rgba(255, 255, 255, .85);
+    --content-shadow: 0 0 0 .0625rem rgba(255, 255, 255, .5), 0 .125rem .5rem 0 rgba(0, 0, 0, .6);
+
+    // Progress Bar
+    --progress-bar-border-radius: unset;
+    --progress-bar-border-color: #8696a9;
+    --progress-bg-color: #29313a;
+    --progress-bar-default-bg-color: #d3d7d9;
+    --progress-bar-danger-bg-color: #ff8888;
+
+    //Navigation Color New
+    --nav-background: $brand-primary;
+    --nav-hover-color: #395369;
+    --nav-selected: #334b5f;
+    --nav-focus: #334b5f;
+    --loader-bg-img: url('/resources/images/loader_inc.gif');
+    --shell-bar-bg-color: #354a5f;
+    --shell-bar-hover-color:#283848;
+    --shell-bar-text-color:#fafafa;
+    --date-picker-hover-bg-color:#2f3943;
+    --date-picker-hover-color:#fafafa;
+}
+
+.theme-horizon-morning {
+
+    //SAP Fiori Horizon Morning Primary Colors
+    --primary1-color: #EBF8FF;
+    --primary2-color: #0070F2;
+    --darken-primary2-color: #0070f2;
+    --primary3-color: #ffffff;
+    --primary4-color: #F5F6F7;
+    --primary5-color: #758ca4;
+    --primary6-color: #1D2D3E;
+    --primary7-color: #556B82;
+
+    //Accent Colors
+    --accent1-color: #d27700;
+    --accent2-color: #AA0808;
+    --accent3-color: #BA066C;
+    --accent4-color: #A100C2;
+    --accent5-color: #5D36FF;
+    --accent6-color: #0057d2;
+    --accent7-color: #046C7A;
+    --accent8-color: #256F3A;
+    --accent9-color: #6C32A9;
+    --accent10-color: #5B738B;
+
+    //Grayscale
+    --grayscale-text-and-titles-color: #1D2D3E;
+    --grayscale-subtitles-and-labels-color: #556B82;
+    --grayscale-prompt-placeholder-text-color: #556B82;
+    --grayscale-borders-and-derived-controls-color: #758ca4;
+    --grayscale-header-container-borders-color: #d9d9d9;
+    --grayscale-list-table-borders-color: #e5e5e5;
+    --grayscale-column-header-background-color: #EFF1F2;
+    --grayscale-application-content-background-color: #F5F6F7;
+    --grayscale-header-card-container-background-color: #ffffff;
+
+    //Semantic Foreground Colors
+    --semantic-foreground-negative-color: #AA0808;
+    --semantic-foreground-critical-color: #e76500;
+    --semantic-foreground-positive-color: #256F3A;
+    --semantic-foreground-neutral-color: #788FA6;
+    --semantic-foreground-information-color: #0070F2;
+
+    //Semantic Background Colors
+    --semantic-background-negative-color: #FFEAF4;
+    --semantic-background-critical-color: #FFF8D6;
+    --semantic-background-positive-color: #F5FAE5;
+    --semantic-background-neutral-color: #EFF1F2;
+    --semantic-background-information-color: #E1F4FF;
+
+    //Indication Colors
+    --ui-indication1: #840606;
+    --ui-indication2: #AA0808;
+    --ui-indication3: #B95100;
+    --ui-indication4: #256F3A;
+    --ui-indication5: #0070F2;
+    --ui-indication6: #046C7A;
+    --ui-indication7: #5D36FF;
+    --ui-indication8: #A100C2;
+
+    /* New Variable  Without find colors in Sap themes*/
+    --btn-default-bg-color: #fff;
+    --btn-default-border-color:#bcc3ca;
+    --btn-default-hover-bg-color: #eaecee;
+    --btn-default-hover-border-color: #bcc3ca;
+    --btn-hover-background-color: #eaecee;
+    --btn-active-on-active-bg-color: #ebf5cb;
+    --btn-warning-border-color: #ffeb84;
+    --btn-warning-active-color: #d1670b;
+    --btn-warning-bg-color: #fff3b7;
+    --btn-warning-hover-border-color: #ffef9e;
+    --btn-warning-hover-bg-color: #ffef9e;
+    --btn-danger-on-active-bg-color: #ffd6e9;
+    --btn-success-border-color: #dbeda0;
+    --btn-success-bg-color: #ebf5cb;
+    --btn-success-hover-border-color: #e3f1b6;
+    --btn-success-hover-bg-color: #e3f1b6;
+    --btn-danger-border-color: #ffc2de;
+    --btn-danger-bg-color: #ffd6e9;
+    --btn-danger-hover-border-color: #ffbddb;
+    --btn-danger-hover-bg-color: #ffbddb;
+    --btn-lite-border-color: transparent;
+    --btn-lite-bg-color: transparent;
+    --btn-lite-hover-border-color: #bcc3ca;
+    --btn-lite-hover-bg-color: #eaecee;
+    --btn-default-border-color: #bcc3ca; 
+    --btn-primary-color:  #fff;
+    --btn-primary-bg-color: #0070f2;
+    --btn-primary-hover-color: #fff;
+    --btn-primary-hover-bg-color:  #0064d9;
+    --list-hover-bg-color: #eaecee;
+    --table-border-color: #ced0d3;
+    --input-field-bg-color: #fff;
+    --input-field-hover-border-color: #0064d9;
+    --input-field-focus-border-color: #0064d9;
+    --switch-track-bg-color: #788fa6;
+    --switch-track-selected-bg-color: #0064d9;
+
+    //Outline
+    --outline-size: 0.195rem;
+    --outline-style-solid: solid;
+    --outline-offset: -0.125rem;
+    --outline-color: #0064d9;
+
+    //Button inner-border
+    --btn-outline-offset: 0.0625rem;
+    --btn-content-focus-color: #0070f2;
+    --btn-primary-content-focus-color: #fff;
+    --btn-content-focus-style: solid;
+    --btn-content-focus-width: .125rem;
+    --btn-focus-border-radius: .375rem;
+
+    // Box shadow
+    --box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    --bax-shadow-color: #D1E0EE;
+    --bax-shadow: rgba(0, 0, 0, 0.15);
+    --tile-shadow: rgba(0, 0, 0, .85);
+    --content-shadow: 0 0 0 .0625rem rgba(34, 53, 72, .48), 0 .125rem .5rem 0 rgba(34, 53, 72, .3);
+    --btn-default-hover-box-shadow: inset 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    --btn-success-box-shadow: inset 0 0 0 .0625rem rgba(48, 145, 76, .18);
+    --btn-danger-box-shadow: inset 0 0 0 .0625rem rgba(255, 142, 196, .45);
+    --btn-warning-box-shadow: inset 0 0 0 .0625rem rgba(255, 213, 10, .4);
+    --btn-tranparent-box-shadow: inset 0 0 0 .0625rem rgba(85, 107, 129, .25);
+
+    // Progress Bar
+
+    --progress-bar-border-radius: 1rem;
+    --progress-default-bg-color: #d5dadd;
+    --progress-bar-default-bg-color: #788fa6;
+    --progress-bg-color: #fff;
+    --progress-primary-bg-color: #cdedff;
+    --progress-success-bg-color: #e5f2ba;
+    --progress-warning-bg-color: #fff4bd;
+    --progress-danger-bg-color: #ffdbec;
+    --progress-bar-danger-bg-color: #f53232;
+
+    //Navigation Color New
+    --nav-background: $brand-primary;
+    --nav-hover-color: #dcf3ff;
+    --nav-selected: #ebf8ff;
+    --nav-focus: #ebf8ff;
+    --date-picker-hover-bg-color:#eaecee;
+    --date-picker-hover-color:#1d2d3e;
+
+    --loader-bg-img: url('/resources/images/loader.gif');
+
+    --shell-bar-bg-color: #ffffff;
+    --shell-bar-hover-color: #eaecee;
+    --shell-bar-text-color:#1d2d3e;
+
+}
+
+.theme-horizon-evening {
+
+    //SAP Fiori Horizon Evening Primary Colors
+    --primary1-color: #1D2D3E;
+    --primary2-color: #4DB1FF;
+    --darken-primary2-color: #4db1ff;
+    --primary3-color: #1D232A;
+    --primary4-color: #12171C;
+    --primary5-color: #A9B4BE;
+    --primary6-color: #EAECEE;
+    --primary7-color: #8396A8;
+
+    //Accent Colors
+    --accent1-color: #FFDF72;
+    --accent2-color: #FF8CB2;
+    --accent3-color: #FECBDA;
+    --accent4-color: #FFAFED;
+    --accent5-color: #D3B6FF;
+    --accent6-color: #A6E0FF;
+    --accent7-color: #64EDD2;
+    --accent8-color: #64EDD2;
+    --accent9-color: #B995E0;
+    --accent10-color: #D5DADD;
+
+    //Grayscale
+    --grayscale-text-and-titles-color: #EAECEE;
+    --grayscale-subtitles-and-labels-color: #8396A8;
+    --grayscale-prompt-placeholder-text-color: #8396A8;
+    --grayscale-borders-and-derived-controls-color: #758ca4;
+    --grayscale-header-container-table-borders-color: #2e3742;
+    --grayscale-column-header-background-color: #171B21;
+    --grayscale-application-content-background-color: #12171C;
+    --grayscale-header-card-container-background-color: #1D232A;
+    --grayscale-list-table-borders-color: #2e3742;
+
+    //Semantic Foreground Colors
+    --semantic-foreground-negative-color: #FA6161;
+    --semantic-foreground-critical-color: #FFDF72;
+    --semantic-foreground-positive-color: #97DD40;
+    --semantic-foreground-neutral-color: #A9B4BE;
+    --semantic-foreground-information-color: #4DB1FF;
+
+    //Semantic Background Colors
+    --semantic-background-negative-color: #490000;
+    --semantic-background-critical-color: #382700;
+    --semantic-background-positive-color: #143E20;
+    --semantic-background-neutral-color: #242e38;
+    --semantic-background-information-color: #00144A;
+
+    //Indication Colors
+    --ui-indication1: #FD3535;
+    --ui-indication2: #FF8F8F;
+    --ui-indication3: #FFC933;
+    --ui-indication4: #BDE986;
+    --ui-indication5: #A6E0FF;
+    --ui-indication6: #64EDD2;
+    --ui-indication7: #D3B6FF;
+    --ui-indication8: #FF8AF0;
+
+    //New Variable  Without find colors in Sap themes
+    --btn-default-bg-color: #1c242c;
+    --btn-default-border-color: #3a4a5a;
+    --btn-default-hover-bg-color: #062e4f;
+    --btn-default-hover-border-color: #3a4a5a;
+    --btn-hover-background-color: #222b35;
+    --btn-default-border-color: #3a4a5a;
+    --btn-active-on-active-bg-color: #0d6733;
+    --btn-warning-active-color: #d1670b;
+    --btn-warning-on-active-bg-color: #a20000;
+    --btn-warning-bg-color: #382700;
+    --btn-warning-border-color: #523900;
+    --btn-warning-hover-border-color: #523900;
+    --btn-warning-hover-bg-color: #523900;
+    --btn-success-bg-color: #153e20;
+    --btn-success-border-color: #153e20;
+    --btn-success-hover-bg-color: #1b512a; 
+    --btn-success-hover-border-color: #1b512a;
+    --btn-danger-border-color: #620000;
+    --btn-danger-bg-color: #490000;
+    --btn-danger-hover-border-color: #620000;
+    --btn-danger-hover-bg-color: #620000;
+    --btn-lite-border-color: #2e3b47;
+    --btn-lite-bg-color: #181f25;
+    --btn-lite-hover-border-color: #3a4a5a;
+    --btn-lite-hover-bg-color: #3a4a5a;
+    --btn-primary-color:  #fff;
+    --btn-primary-bg-color: #0070f2;
+    --btn-primary-hover-color: #eaecee;
+    --btn-primary-hover-bg-color:  #0064d9; 
+    --list-hover-bg-color: #232b33;
+    --table-border-color: #ced0d3;
+    --input-field-bg-color: #161c22;
+    --input-field-hover-border-color: #4db1ff;
+    --switch-track-bg-color: #a9b4be;
+    --switch-track-selected-bg-color: #4db1ff;
+
+    //Outline
+    --outline-size: 0.195rem;
+    --outline-style-solid: solid;
+    --outline-offset: -0.125rem;
+    --outline-color: #4db1ff;
+
+    //Button inner-border
+    --btn-outline-offset: 0.0625rem;
+    --btn-content-focus-color: #4db1ff;
+    --btn-primary-content-focus-color: #000;
+    --btn-content-focus-style: solid;
+    --btn-content-focus-width: .125rem;
+    --btn-focus-border-radius: .375rem;
+    
+
+    // Box shadow
+    --box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    --bax-shadow-color: #D1E0EE;
+    --bax-shadow: rgba(0, 0, 0, 0.15);
+    --tile-shadow: rgba(0, 0, 0, .85);
+    --content-shadow: 0 0 0 .0625rem rgba(255, 255, 255, .35), 0 .125rem .5rem 0 rgba(0, 0, 0, .6);
+    --btn-default-hover-box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, .25);
+    --btn-success-box-shadow: inset 0 0 0 .0625rem rgba(109, 173, 31, .18);
+    --btn-danger-box-shadow: inset 0 0 0 .0625rem rgba(248, 38, 38, .3);
+    --btn-warning-box-shadow: inset 0 0 0 .0625rem rgba(132, 92, 0, .5);
+    --btn-tranparent-box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, .25);
+
+    // Progress Bar
+
+    --progress-bar-border-radius: 1rem;
+    --progress-bg-color: #2e3b48;
+    --progress-default-bg-color: #2e3b48;
+    --progress-bar-default-bg-color: #788fa6;
+    --progress-primary-bg-color: #001b64;
+    --progress-success-bg-color: #174624;
+    --progress-warning-bg-color: #6b4b00;
+    --progress-danger-bg-color: #680000;
+    --progress-bar-danger-bg-color: #fa6161;
+
+    //Navigation Color New
+    --nav-background: $brand-primary;
+    --nav-hover-color: #223548;
+    --nav-selected: #1d2d3e;
+    --nav-focus: #1d2d3e;
+    --date-picker-hover-bg-color:#232b33;
+    --date-picker-hover-color:#eaecee;
+
+    --loader-bg-img: url('/resources/images/loader.gif');
+
+    --shell-bar-bg-color: #1d232a;
+    --shell-bar-hover-color: #181f25;
+    --shell-bar-text-color:#eaecee;
+
+}
+
+.base-belize {
+    // Sap SAP Fiori Primary Colors
+    --primary1-color: #3F5161;
+    --primary2-color: #427CAC;
+    --darken-primary2-color: #91C8F6;
+    --primary3-color: #EFF4F9;
+    --primary4-color: #FFFFFF;
+    --primary5-color: #FAFAFA;
+    --primary6-color: #BFBFBF;
+    --primary7-color: #333333;
+
+    //Accent Colors
+    --accent1-color: #E09D00;
+    --accent2-color: #E6600D;
+    --accent3-color: #C14646;
+    --accent4-color: #AB218E;
+    --accent5-color: #678BC7;
+    --accent6-color: #0092D1;
+    --accent7-color: #1A9898;
+    --accent8-color: #759421;
+    --accent9-color: #925ACE;
+    --accent10-color: #647987;
+
+    //Grayscale
+    --grayscale-text-and-titles-color: #333333;
+    --grayscale-subtitles-and-labels-color: #666666;
+    --grayscale-prompt-placeholder-text-color: #74777a;
+    --grayscale-borders-and-derived-controls-color: #BFBFBF;
+    --grayscale-header-container-borders-color: #CCCCCC;
+    --grayscale-list-table-borders-color: #e5e5e5;
+    --grayscale-column-header-background-color: #f2f2f2;
+    --grayscale-application-content-background-color: #f7f7f7;
+    --grayscale-header-card-container-background-color: #ffffff;
+
+    //Semantic Background Colors
+    --semantic-background-negative-color: #ffebeb;
+    --semantic-background-critical-color: #fef7f1;
+    --semantic-background-positive-color: #f1fdf6;
+    --semantic-background-neutral-color: #f4f4f4;
+    --semantic-background-information-color: #f5faff;
+
+    /* New Variable  Without find colors in Sap themes*/
+    --btn-hover-background-color: #ebf5fe;
+    --btn-active-on-active-bg-color: #0d6733;
+    --btn-warning-active-color: #d1670b;
+    --btn-warning-on-active-bg-color: #a20000;
+    // Box shadow
+    --bax-shadow-color: #D1E0EE;
+    --loader-bg-img: url('/resources/images/loader.gif');
+    --shell-bar-hover-color:#283848;
+    --shell-bar-text-color:#ffffff;
+    --date-picker-hover-bg-color:#fafafa;
+    --date-picker-hover-color:#555555;
+}
+
+
+.theme-belize {
+    @extend .base-belize;
+    --launchpad-gradients-top-color: #A9C6DE;
+    --launchpad-gradients-Bottom-color: #E7ECF0;
+
+    /** Indication Colors */
+    --ui-indication1: #880000;
+    --ui-indication2: #bb0000;
+    --ui-indication3: #E78C07;
+    --ui-indication4: #2B7C2B;
+    --ui-indication5: #427CAC;
+    --ui-indication6: #1a9898;
+    --ui-indication7: #925ace;
+    --ui-indication8: #ab218e;
+
+    //Semantic Foreground Colors
+    --semantic-foreground-negative-color: #bb0000;
+    --semantic-foreground-critical-color: #E78C07;
+    --semantic-foreground-positive-color: #2B7D2B;
+    --semantic-foreground-neutral-color: #5E696E;
+    --semantic-foreground-information-color: #427cac;
+
+    //Navigation Color New
+    --nav-background: $brand-primary;
+    --nav-hover-color: #d8e8f7;
+    --nav-selected: #e5f0fa;
+    --nav-focus: #e5f0fa;
+
+    --bax-shadow: rgba(0, 0, 0, 0.15);
+    --tile-shadow: rgba(0, 0, 0, .85);
+    --loader-bg-img: url('/resources/images/loader.gif');
+    --shell-bar-hover-color:#283848;
+    --shell-bar-text-color:#ffffff;
+    --date-picker-hover-bg-color:#fafafa;
+    --date-picker-hover-color:#555555;
+}
+
+
+.theme-belize-deep {
+    @extend .base-belize;
+    --launchpad-gradients-top-color: #2C4E6C;
+    --launchpad-gradients-Bottom-color: #9EC7D8;
+
+    //Semantic Foreground Colors
+    --semantic-foreground-negative-color: #FF8888;
+    --semantic-foreground-critical-color: #FABD64;
+    --semantic-foreground-positive-color: #ABE2AB;
+    --semantic-foreground-neutral-color: #D3D7D9;
+    --semantic-foreground-information-color: #91c8f6;
+
+    /** Indication Colors */
+    --ui-indication1: #FF8888;
+    --ui-indication2: #FFBBBB;
+    --ui-indication3: #FABD64;
+    --ui-indication4: #ABE2AB;
+    --ui-indication5: #91c8f6;
+    --ui-indication6: #7fc6c6;
+    --ui-indication7: #b995e0;
+    --ui-indication8: #e269c9;
+
+    //Navigation Color New
+    --nav-background: $brand-primary;
+    --nav-hover-color: #395369;
+    --nav-selected: #334b5f;
+    --nav-focus: #334b5f;
+    --bax-shadow: rgba(255, 255, 255, 0.15);
+    --tile-shadow: rgba(255, 255, 255, .85);
+    --loader-bg-img: url('/resources/images/loader.gif');
+    --shell-bar-hover-color:#283848;
+    --shell-bar-text-color:#ffffff;
+    --date-picker-hover-bg-color:#fafafa;
+    --date-picker-hover-color:#555555;
+}
+
+
+.high-contrast-black-theme {
+    @extend .base-belize;
+    --launchpad-gradients-top-color: #181D22;
+    --launchpad-gradients-Bottom-color: #272F37;
+}
+
+.high-contrast-white-theme {
+    @extend .base-belize;
+    --launchpad-gradients-top-color: #181D22;
+    --launchpad-gradients-Bottom-color: #272F37;
+}
+
+//Navigation colors
+$navigation-color: var(--grayscale-text-and-titles-color);
+$navigation-color-hover: var(--grayscale-text-and-titles-color);
+$navigation-color-active: var(--grayscale-text-and-titles-color);
+$navigation-border-color: var(--grayscale-list-table-borders-color);
+$navigation-bg: var(--grayscale-header-card-container-background-color);
+$navigation-bg-hover: var(--nav-focus);
+$navigation-bg-active: var(--nav-focus);
+$navigation-sub-bg: var(--grayscale-header-card-container-background-color);
+$navigation-sub-color: var(--grayscale-text-and-titles-color);
+$navigation-sub-color-hover: var(--grayscale-text-and-titles-color);
+$navigation-sub-bg-hover: var(--nav-focus);
+$navigation-sub-color-active: var(--grayscale-text-and-titles-color);
+$navigation-sub-bg-active: var(--nav-focus);
+
+$navtopbar-bg: var(--primary3-color);
+$navtopbar-color: var(--grayscale-text-and-titles-color);
+$navtopbar-color-hover: var(--grayscale-text-and-titles-color);
+$navtopbar-color-active: var(--grayscale-text-and-titles-color);
+$navtopbar-bg-hover: var(--nav-focus);
+$navtopbar-bg-active: var(--nav-focus);
+
+$navsidebar-bg: var(--primary3-color);
+$navsidebar-color: var(--grayscale-text-and-titles-color);
+$navsidebar-color-hover: var(--grayscale-text-and-titles-color);
+$navsidebar-bg-hover: var(--nav-focus);
+$navsidebar-color-active: var(--grayscale-text-and-titles-color);
+$navsidebar-bg-active: var(--nav-focus);
+$navsidebar-border-color: var(--grayscale-list-table-borders-color);
+
+//Basic varibales 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-primary,
+.text-primary:hover,
+.mx-title {
+    color: var(--grayscale-text-and-titles-color)!important;
+}
+
+//== Step 1: Brand Colors
+$brand-default: #f7f7f7;
+$brand-primary: var(--primary2-color);
+$brand-inverse: var(--semantic-foreground-neutral-color);
+$brand-info: var(--semantic-foreground-information-color);
+$brand-success: var(--semantic-foreground-positive-color);
+$brand-warning: var(--semantic-foreground-critical-color);
+$brand-danger: var(--semantic-foreground-negative-color);
+
+//Navigation Color
+$nav-color: #000;
+$nav-background: $brand-primary;
+$nav-hover-color: var(--nav-hover-color);
+$nav-selected: var(--nav-selected);
+$nav-focus: var(--nav-focus);
+
+//Labels colr
+$label-default-bg: $brand-default;
+$label-success-bg: var(--semantic-background-positive-color);
+$label-danger-bg: var(--semantic-background-negative-color);
+$label-warning-bg:var(--semantic-background-critical-color);
+$label-info-bg: var(--semantic-background-information-color);
+$label-inverse-bg: var(--semantic-background-neutral-color);
+
+$label-warning-color: $brand-warning;
+$label-info-color: $brand-info;
+$label-danger-color: $brand-danger;
+$label-inverse-color: $brand-inverse;
+
+//Old Varibables 
+
+//== SAP Fiori Primary Colors
+// The recommended primary colors leverage the uniqueness of SAP Fiori apps. The primary colors represent the overall look and feel.
+$primary-colors-brand-highlight: #427CAC;
+$primary-colors-brand-highlight-theme-dark: #91C8F6;
+$primary-colors-global-light-base: #EFF4F9;
+$primary-colors-background: #EBEBEB;
+
+//== Gray Shades
+//## Different gray shades to be used for our variables and components
+$gray-darker: #222222;
+$gray-dark: #333333;
+$gray: #555555;
+$gray-light: #888888;
+$gray-primary: #D7D7D7;
+$gray-lighter: #EEEEEE;
+
+$color-success-light: #abe2ab;
+/* __NEW__ */
+$color-danger-light: var(--semantic-foreground-negative-color);
+/* __NEW__ */
+
+// Used for other variables
+$default-border-color: #BFBFBF;
+
+//== Step 3: Typography
+$font-family-import: false;
+$font-family-base: '72',
+'Open Sans',
+sans-serif;
+$font-base-size: 14px;
+$font-base-color: #333333;
+$link-color: #346187;
+$font-size-h1: 28px;
+$font-size-h2: 22px;
+$font-size-h3: 20px;
+$font-size-h4: 18px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+$font-color-headers: #333333;
+
+//== Step 2: UI Customization
+
+// Topbar
+$topbar-bg: transparent;
+$navtopbar-border-color: $default-border-color;
+$topbar-border-color: $navtopbar-border-color;
+$topbar-minimalheight: 45px;
+$navtopbar-color: $font-base-color;
+$navbar-brand-name: $default-border-color;
+$brand-logo: false;
+$brand-logo-height: 27px;
+$brand-logo-width: 30px;
+
+// Sidebar
+$sidebar-bg: var(--grayscale-header-card-container-background-color);
+$navsidebar-color: var(--grayscale-header-card-container-background-color);
+$navsidebar-color-hover: $navsidebar-color;
+
+// Backgrounds
+$bg-color: #fafafa;
+$bg-color-secondary: $primary-colors-global-light-base;
+
+// == Old variables used in theme customizer to the new lib variables
+$font-size-default: $font-base-size;
+$font-color-default: $font-base-color;
+$border-color-default: $default-border-color;
+$font-color-header: $font-color-headers;
+
+
+//
+//  █████╗ ██████╗ ██╗   ██╗ █████╗ ███╗   ██╗ ██████╗███████╗██████╗
+// ██╔══██╗██╔══██╗██║   ██║██╔══██╗████╗  ██║██╔════╝██╔════╝██╔══██╗
+// ███████║██║  ██║██║   ██║███████║██╔██╗ ██║██║     █████╗  ██║  ██║
+// ██╔══██║██║  ██║╚██╗ ██╔╝██╔══██║██║╚██╗██║██║     ██╔══╝  ██║  ██║
+// ██║  ██║██████╔╝ ╚████╔╝ ██║  ██║██║ ╚████║╚██████╗███████╗██████╔╝
+// ╚═╝  ╚═╝╚═════╝   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═════╝
+//
+
+
+//== Typography
+//## Change your font family, weight, line-height, headings and more (used in components/typography)
+
+@font-face {
+    font-family: '72';
+    src: url('/resources/fonts/72-Regular.woff');
+}
+
+@font-face {
+    font-family: '72';
+    font-weight: bold;
+    src: url('/resources/fonts/72-Bold.woff');
+}
+
+// Font Family Import (Used for google font plugin in theme creater https://ux.mendix.com/theme-creator.html)
+$font-family-import: false;
+
+@if $font-family-import !=false {
+    // Only import, if the import is set
+    @import url($font-family-import);
+}
+
+// Font Family / False = fallback from Bootstrap (Helvetica Neue)
+$font-family-base: "72",
+Arial,
+Helvetica,
+sans-serif;
+
+// Font Size Headers
+$font-size-h1: 28px;
+$font-size-h2: 22px;
+$font-size-h3: 20px;
+$font-size-h4: 18px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+
+// Spacing
+$font-header-margin: 0;
+$font-color-detail: var(--grayscale-subtitles-and-labels-color); // Use-only
+
+
+//== Form
+//## Used in components/inputs
+// Form Label
+$form-label-color: #999999;
+$form-label-weight: normal;
+
+// Form Input dimensions
+$form-input-height: 26px;
+$form-input-padding-y: 3px;
+$form-input-padding-x: 8px;
+$form-input-border-radius: 0px;
+
+// Form Input Static styling
+$form-input-static-border-color: rgb(229, 229, 229);
+
+// Form Group
+$form-group-margin-bottom: 0;
+
+
+
+
+//== Buttons
+//## Define background-color, border-color and text. Used in components/buttons
+
+// Default button style
+$btn-font-size: 15px;
+$btn-bordered: false; // Default value false, set to true if you want this effect
+$btn-border-radius: 3.2px;
+
+// Button Background Color
+$btn-default-bg: transparent;
+$btn-inverse-bg: transparent;
+$btn-primary-bg: $brand-primary;
+$btn-info-bg: transparent;
+$btn-success-bg: transparent;
+$btn-warning-bg: transparent;
+$btn-danger-bg: transparent;
+
+// Button Border Color
+$btn-default-border-color: var(--grayscale-borders-and-derived-controls-color);
+$btn-inverse-border-color: $brand-inverse;
+$btn-primary-border-color: var(--darken-primary2-color);
+$btn-info-border-color: $brand-info;
+$btn-success-border-color: $brand-success;
+$btn-warning-border-color: $brand-warning;
+$btn-danger-border-color: $brand-danger;
+
+// Button Text Color
+$btn-default-color: var(--darken-primary2-color);
+$btn-inverse-color: $brand-inverse;
+$btn-primary-color: var(--primary3-color); // Emphezied button
+$btn-info-color: $brand-info;
+$btn-success-color: $brand-success;
+$btn-warning-color: $brand-warning;
+$btn-danger-color: $brand-danger;
+
+// Button hover Color
+$btn-default-bg-hover: $btn-default-border-color;
+$btn-inverse-bg-hover: $btn-inverse-border-color;
+$btn-primary-bg-hover: $btn-primary-border-color !important;
+$btn-info-bg-hover: $btn-info-border-color;
+$btn-success-bg-hover: $btn-success-border-color;
+$btn-warning-bg-hover: $btn-warning-border-color;
+$btn-danger-bg-hover: $btn-danger-border-color;
+$btn-link-bg-hover: #ebebeb;
+
+
+
+// Footer colors
+$footer-color: var(--grayscale-text-and-titles-color);
+$footer-border: var(--grayscale-borders-and-derived-controls-color);
+$footer-bg: var(--launchpad-gradients-Bottom-color);
+
+// Footer button colors
+$footer-btn-default-color: var(--primary1-color);
+$footer-btn-success-color: $color-success-light;
+$footer-btn-danger-color: $color-danger-light;
+
+// Footer button background colors
+$footer-btn-success-bg: var(--primary3-color);
+$footer-btn-danger-bg: var(--primary3-color);
+
+// Footer button hover background colors
+//$footer-btn-default-bg-hover:            rgba(99, 127, 153, 0.5);
+$footer-btn-default-bg-hover: var(--primary3-color);
+$footer-btn-success-bg-hover: var(--primary3-color);
+$footer-btn-danger-bg-hover: var(--primary3-color);
+
+
+// Wizard
+// Wizard Step
+$wizard-step-color: var(--grayscale-text-and-titles-color);
+$wizard-step-border: var(--grayscale-borders-and-derived-controls-color);
+
+
+//
+// ███████╗██╗  ██╗██████╗ ███████╗██████╗ ████████╗
+// ██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
+// █████╗   ╚███╔╝ ██████╔╝█████╗  ██████╔╝   ██║
+// ██╔══╝   ██╔██╗ ██╔═══╝ ██╔══╝  ██╔══██╗   ██║
+// ███████╗██╔╝ ██╗██║     ███████╗██║  ██║   ██║
+// ╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝
+//
+
+
+//== Grids
+//## Used for Datagrid, Templategrid, Listview & Tables (see components folder)
+
+// Default Border Colors
+$grid-border-color: var(--grayscale-borders-and-derived-controls-color);
+
+// spacing
+$grid-padding-top: 4px;
+$grid-padding-right: 8px;
+$grid-padding-bottom: 4px;
+$grid-padding-left: 8px;
+
+
+// Background Colors
+$grid-bg: var(-grayscale-header-card-container-background-color) !default;
+$grid-bg-header: var(  --grayscale-column-header-background-color);
+ // Grid Headers
+$grid-bg-hover: var(--grayscale-application-content-background-color);
+$grid-bg-selected:  var(--grayscale-application-content-background-color);
+$grid-bg-selected-hover:  var(--grayscale-application-content-background-color);
+
+// List colors
+$list-bg-hover: var(-grayscale-header-card-container-background-color);
+$list-activefocus: var(--grayscale-application-content-background-color);
+$list-header-bg: var(--grayscale-column-header-background-color);
+$list-header-border: var(--grayscale-borders-and-derived-controls-color);
+
+
+//== Tabs
+//## Default variables for Tab Container Widget (used in components/tabcontainer)
+
+// Text Color
+$tabs-color: $font-color-detail;
+$tabs-color-active: $font-color-default;
+$tabs-lined-color-active: $brand-primary;
+
+// Border Color
+$tabs-border-color: $border-color-default;
+$tabs-lined-border-color: $brand-primary;
+
+// Background Color
+$tabs-bg: var(--grayscale-header-card-container-background-color);
+$tabs-bg-hover: lighten($tabs-border-color, 5);
+$tabs-bg-active: $brand-primary;
+
+
+//== Modals
+//## Default Mendix Modal, Blocking Modal and Login Modal (used in components/modals)
+
+// Background Color
+$modal-header-bg: var(--grayscale-header-card-container-background-color);
+
+// Border Color
+$modal-header-border-color: var(--grayscale-borders-and-derived-controls-color);
+
+// Text Color
+$modal-header-color: var(--grayscale-column-header-background-color);
+
+
+
+
+//== Spacing
+//## Advanced layout options (used in base/mixins/default-spacing)
+
+// Small spacing
+$spacing-small: 4px;
+
+// Medium spacing
+$spacing-medium: 16px;
+$t-spacing-medium: 16px;
+$m-spacing-medium: 16px;
+
+// Large spacing
+$spacing-large: 32px;
+$t-spacing-large: 32px;
+$m-spacing-large: 16px;
+
+// Layout spacing
+$layout-spacing-top: 16px;
+$layout-spacing-right: 32px;
+$layout-spacing-bottom: 16px;
+$layout-spacing-left: 32px;
+
+$t-layout-spacing-top: 16px;
+$t-layout-spacing-right: 32px;
+$t-layout-spacing-bottom: 16px;
+$t-layout-spacing-left: 32px;
+
+$m-layout-spacing-top: 16px;
+$m-layout-spacing-right: 16px;
+$m-layout-spacing-bottom: 16px;
+$m-layout-spacing-left: 16px;
+
+// Combined layout spacing
+$layout-spacing: $layout-spacing-top $layout-spacing-right $layout-spacing-bottom $layout-spacing-left;
+$m-layout-spacing: $m-layout-spacing-top $m-layout-spacing-right $m-layout-spacing-bottom $m-layout-spacing-left;
+$t-layout-spacing: $t-layout-spacing-top $t-layout-spacing-right $t-layout-spacing-bottom $t-layout-spacing-left;
+
+// Gutter size
+$gutter-size: 15px; //Use only
+
+
+
+
+//== Tables
+//## Table spacing options (used in components/tables)
+
+$padding-table-cell-top: 8px;
+$padding-table-cell-bottom: 8px;
+$padding-table-cell-left: 4px;
+$padding-table-cell-right: 4px;
+
+
+
+
+
+//== Media queries breakpoints
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone Deprecated `$screen-xs` as of v3.0.1
+$screen-xs: 480px;
+
+// Small screen / tablet Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px;
+
+// Medium screen / desktop Deprecated `$screen-md` as of v3.0.1
+$screen-md: 992px;
+
+// Large screen / wide desktop Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1200px;
+
+// So media queries don't overlap when required, provide a maximum (used for max-width)
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+
+
+//#CMI Added New variables
+
+//Buttons Color
+
+$button-color-light-bottom: var(--grayscale-header-card-container-background-color);
+$button-error-light-color: #b00;
+$button-warning-light-color: #E78C07;
+$btn-default-light-color: #0854a0;
+$btn-inverse-light-color: #000;
+
+
+
+
+//Form Control select
+
+
+$form-input-has-error-border-color : #b00;
+$form-input-has-error-border-width : .125rem;
+$form-input-color: var(--grayscale-header-card-container-background-color);
+
+$sap-tile-light-theme-background-hover-color: #f5f5f5;
+
+
+// Info Label Section 
+$info-label-font-family: "72",
+"72full",
+Arial,
+Helvetica,
+sans-serif;
+$label-all-padding: 0.5em;
+$label-all-border-border-radius: 1em;
+$label-all-font-weight: 400;
+
+
+$wizard-background-color:var(--grayscale-header-card-container-background-color);
+$mainheader-background-color: var(--grayscale-header-card-container-background-color);
+
+/** Sap atlas master details layout and letterbox colors */
+$verticalline-gradient-bottom-color: rgba(145, 200, 246, 0);
+$letterbox-shadow-color: rgba(0, 0, 0, 0.15);

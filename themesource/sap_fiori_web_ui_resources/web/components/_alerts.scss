@@ -1,0 +1,50 @@
+//
+// DISCLAIMER:
+// Do not change this file because it is core styling.
+// Customizing core files will make updating Atlas much more difficult in the future.
+// To customize any core styling, copy the part you want to customize to styles/web/sass/app/ so the core styling is overwritten.
+//
+
+/* ==========================================================================
+   Alerts
+
+//== Design Properties
+//## Helper classes to change the look and feel of the component
+========================================================================== */
+.alert-bordered {
+    border: 1px solid;
+}
+
+// Color variations
+.alert-success {
+    color: var(--primary6-color);
+    border-color: var(--ui-indication4);
+    background-color: var(--semantic-background-positive-color);
+}
+
+.alert-info {
+    color: var(--primary6-color);
+    border-color: var(--ui-indication5);
+    background-color: var(--semantic-background-information-color);
+}
+
+.alert-warning {
+    color: var(--primary6-color);
+    border-color: var(--semantic-foreground-critical-color);
+    background-color: var(--semantic-background-critical-color);
+}
+
+.alert-danger {
+    color: var(--primary6-color);
+    border-color:var(--semantic-foreground-negative-color);
+    background-color: var(--semantic-background-negative-color);
+
+}
+
+//== State
+//## Styling when component is in certain state
+//-------------------------------------------------------------------------------------------------------------------//
+.has-error .alert {
+    margin-top: 8px;
+    margin-bottom: 0;
+}

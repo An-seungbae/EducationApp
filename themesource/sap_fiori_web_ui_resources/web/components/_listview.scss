@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Listview
+
+========================================================================== */
+$colors: red,
+orange,
+yellow,
+green,
+blue,
+purple;
+
+.mx-listview {
+
+    // Search bar
+    .mx-listview-searchbar {
+        position: relative;
+
+        .mx-button {
+            position: absolute;
+            right: 0;
+            color: $brand-primary;
+            border: 0;
+            background: transparent;
+            text-shadow: none;
+        }
+    }
+
+    .mx-listview-item {
+        border-width: 0 0 1px 0;
+
+        &:first-child {
+            border-bottom: 1px solid var(--grayscale-list-table-borders-color);
+        }
+    }
+
+    ul {
+        li {
+            background-color: var(--grayscale-header-card-container-background-color);
+            color: var(--grayscale-text-and-titles-color);
+
+            &:hover {
+                background-color: var(--list-hover-bg-color);
+            }
+        }
+
+        li.selected {
+            background-color: var(--list-hover-bg-color);
+            color: var(--grayscale-text-and-titles-color);
+
+            &:hover {
+                background-color: var(--list-hover-bg-color);
+            }
+            &:focus {
+                z-index: 5;
+                outline: none;
+                box-shadow: none;
+                position: relative;
+            }
+            &:focus:after {
+                content: "";
+                box-sizing: border-box;
+                position: absolute;
+                display: block;
+                left: var(--btn-outline-offset);
+                top: var(--btn-outline-offset);
+                right: var(--btn-outline-offset);
+                bottom: var(--btn-outline-offset);
+                border: var(--btn-content-focus-width) var(--btn-content-focus-style) var(--btn-content-focus-color);
+                border-radius: var(--btn-focus-border-radius);
+            }
+        }
+
+    }
+}
+.mx-dropdown-list > li {
+        background-color: var(--grayscale-header-card-container-background-color);
+        color: var(--grayscale-text-and-titles-color);
+
+        &:hover {
+                background-color: var(--list-hover-bg-color);
+            }
+    }
+
+.list_card {
+    background: rosybrown;
+
+    &>.mx-listview {
+        // Remove widget padding
+        padding: 0;
+
+        /* Clear search button (overrides load more button stying) */
+        // Search bar
+        &>ul {
+            margin: 0;
+
+            .mx-listview-empty {
+                border-style: none;
+                background-color: transparent;
+            }
+
+
+            $border-value: 5px solid;
+
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{length($colors)}n+#{$i}) {
+                    //background: lighten(nth($colors, $i), 20%);
+                    border-left: 5px solid lighten(nth($colors, $i), 20%);
+                }
+            }
+
+            &.selected {
+                background-color: var(--grayscale-application-content-background-color);
+
+                &:hover {
+                    background-color: var(--grayscale-application-content-background-color);
+                }
+            }
+        }
+    }
+}

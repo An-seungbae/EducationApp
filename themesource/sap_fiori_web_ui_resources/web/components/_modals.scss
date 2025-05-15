@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Modals
+
+   Default Mendix Modals. Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults
+========================================================================== */
+.modal-dialog {
+    overflow: hidden;
+    min-width: 320px;
+    min-height: 40px;
+    border-radius: 4px;
+    background: var(--grayscale-application-content-background-color);
+    box-shadow: var(--content-shadow);
+
+    //-webkit-box-shadow: 0 0 0 0.0625rem rgba(0,0,0,.42), 0 1.25rem 5rem 0 rgba(0,0,0,.3);
+    .modal-content {
+        border: 0;
+        border-radius: 4px;
+        background: var(--grayscale-header-card-container-background-color);
+
+        .modal-header {
+            padding: $spacing-small;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            box-shadow: var(--grayscale-borders-and-derived-controls-color);
+            z-index: 1;
+            background: var(--grayscale-header-card-container-background-color);
+
+            h4 {
+                margin: 0;
+                text-align: center;
+                vertical-align: middle;
+                color: var(--grayscale-text-and-titles-color);
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 32px;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                margin: 0;
+            }
+        }
+
+        .modal-body {
+            padding: 1rem; // use layoutgrid
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 0;
+            padding: 20px;
+            border-style: none;
+            background: var(--primary3-color);
+        }
+    }
+
+    .mx-layoutgrid {
+        @include layout-spacing($type: padding, $direction: all, $device: responsive);
+
+        .mx-layoutgrid {
+            padding: 0;
+        }
+    }
+}
+
+// // Default Mendix Window Modal
+.mx-window {
+
+    // If popup direct child is a dataview it gets the class mx-window-view
+    &.mx-window-view .mx-window-body {
+        padding: 0;
+
+        // Dataview in popup
+        >.mx-dataview>.mx-dataview-content,
+        >.mx-placeholder>.mx-dataview>.mx-dataview-content {
+            @include layout-spacing($type: padding, $direction: all, $device: responsive);
+
+            .mx-layoutgrid {
+                padding: 0;
+            }
+        }
+
+        >.mx-dataview>.mx-dataview-controls,
+        >.mx-placeholder>.mx-dataview>.mx-dataview-controls {
+            padding: 0;
+        }
+    }
+}
+
+.modal-body {
+    .sap-footer {
+        background: var(--primary3-color);
+        border-bottom: 0px;
+        border-top: .0625rem solid var(--grayscale-borders-and-derived-controls-color);
+        margin-top: 5px;
+
+        
+    .btn-default {
+
+        color: var(--darken-primary2-color);
+        border-color: var(--darken-primary2-color);
+        background-color:var(--primary3-color);
+            &:hover {
+                color: var(--darken-primary2-color);
+                background-color: var(--btn-hover-background-color);
+                border-color: var(--darken-primary2-color);
+            }
+        }
+        
+        .btn-success {
+        
+        color: var(--primary3-color);
+        border-color: var(--semantic-foreground-positive-color);
+        background-color: var(--semantic-foreground-positive-color);
+            &:hover {
+            color:var(--primary3-color);
+            border-color: var(--semantic-foreground-positive-color);
+            background-color: var(--semantic-foreground-positive-color);
+            }
+        }
+        
+    }
+
+}

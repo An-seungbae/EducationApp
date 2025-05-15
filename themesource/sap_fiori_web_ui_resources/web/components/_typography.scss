@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Typography
+   
+========================================================================== */
+body {
+    font-family:"72","72full",Arial,Helvetica,sans-serif;
+}
+p {
+    margin: 0;
+}
+
+label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--grayscale-subtitles-and-labels-color);
+}
+
+.label-primary {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+}
+
+// overwrite atlas3
+h1, h2, h3, h4, h5, .widget-eventTime, .widget-timeline-title, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 15px 0 30px 0;
+    font-weight: normal;
+}

@@ -1,0 +1,109 @@
+//
+// DISCLAIMER:
+// Do not change this file because it is core styling.
+// Customizing core files will make updating Atlas much more difficult in the future.
+// To customize any core styling, copy the part you want to customize to styles/web/sass/app/ so the core styling is overwritten.
+//
+
+/* ==========================================================================
+   Labels
+
+   Default labels combined with Bootstrap labels
+========================================================================== */
+
+.label {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    color: var(--grayscale-subtitles-and-labels-color);
+    border-radius: 0.25em;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+
+
+    .form-control-static {
+        all: unset;
+        font-weight: $font-weight-normal;
+    }
+
+}
+
+.label-default {
+    color: var(--grayscale-subtitles-and-labels-color);
+    background-color: $label-default-bg;
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid var(--grayscale-subtitles-and-labels-color);
+}
+
+.label-primary {
+    //color: var(--darken-primary2-color);
+    background-color: var(--accent6-color);
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid var(--primary2-color);
+}
+
+.label-success {
+    color: var(--semantic-foreground-positive-color);
+    background-color: var(--semantic-background-positive-color);
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid var(--semantic-foreground-positive-color);
+}
+
+.label-inverse {
+    color: $label-inverse-color;
+    background-color: $label-inverse-bg;
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid $label-inverse-color;
+}
+
+.label-info {
+    color: $label-info-color;
+    background-color: $label-info-bg;
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid $label-info-color;
+}
+
+.label-warning {
+    color: $label-warning-color;
+    background-color: $label-warning-bg;
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid $label-warning-color;
+}
+
+.label-danger {
+    color: $label-danger-color;
+    background-color: $label-danger-bg;
+    padding: $label-all-padding;
+    border-radius: $label-all-border-border-radius;
+    font-weight: $label-all-font-weight;
+    //border: 1px solid $label-danger-color;
+}
+
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button {
+    color: $btn-default-color;
+}
+
+.btn-default .badge {
+    background-color: $brand-danger;
+}
+
+.count-container .top_right {
+    top: -10px !important;
+    right: -25px;
+}

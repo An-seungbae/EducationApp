@@ -1,0 +1,53 @@
+/* ==========================================================================
+Shell Bar
+
+========================================================================== */
+.sapAnalyticalcard {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    box-sizing: border-box;
+    background: var(--grayscale-header-card-container-background-color);
+    color: var(--grayscale-text-and-titles-color);
+    box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    border: .0625rem solid transparent;
+    width: 100%;
+    height: auto;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+    min-height: 5rem;
+}
+
+
+.sapAnalyticalcardHeader {
+    position: relative;
+    flex-shrink: 0;
+    background: var(--grayscale-header-card-container-background-color);
+    border-bottom: 1px solid #ccc;
+    z-index: 2;
+    padding: 16px !important;
+    outline: none;
+
+    label {
+        display: flex;
+    }
+}
+
+.sapAnalyticalcardContainer {
+    .card {
+        background: var(--grayscale-header-card-container-background-color);
+        color: var(--grayscale-text-and-titles-color);
+        padding: 0px;
+        .svg-container{
+
+            padding: 30px;
+
+        }
+        .main-svg{
+            padding: 50px;
+        }
+    }
+}

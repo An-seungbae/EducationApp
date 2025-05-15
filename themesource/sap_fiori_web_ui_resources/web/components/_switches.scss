@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Switches
+
+   Default Switches and Mendix Buttons
+========================================================================== */
+
+
+div.widget-switch.android, .widget-switch.auto, .widget-switch.iOS {
+
+        .checked.widget-switch-btn-wrapper-default {
+
+            background: var(--switch-track-selected-bg-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--primary1-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-default {
+
+            background: var(--switch-track-bg-color);
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+
+        .checked.widget-switch-btn-wrapper-inverse {
+
+            background: var(--btn-hover-background-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--semantic-foreground-neutral-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-inverse {
+
+            background: #ededed;
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+        .checked.widget-switch-btn-wrapper-info {
+
+            background: var(--btn-hover-background-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--semantic-foreground-information-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-info {
+
+            background: #ededed;
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+        .checked.widget-switch-btn-wrapper-warning {
+
+            background: var(--btn-hover-background-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--semantic-foreground-critical-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-warning {
+
+            background: #ededed;
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+
+        .checked.widget-switch-btn-wrapper-danger{
+
+            background: var(--btn-hover-background-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--semantic-foreground-negative-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-danger{
+
+            background: #ededed;
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+        .checked.widget-switch-btn-wrapper-primary{
+
+            background: var(--btn-hover-background-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--darken-primary2-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-primary{
+
+            background: #ededed;
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+        .checked.widget-switch-btn-wrapper-success{
+
+            background: var(--btn-hover-background-color) !important; 
+            border: 1px solid var(--darken-primary2-color) !important; 
+            box-shadow: none !important;
+            .widget-switch-btn{
+                background-color: var(--semantic-foreground-positive-color) !important;  
+            }
+        }
+        .un-checked.widget-switch-btn-wrapper-success{
+
+            background: #ededed;
+            border: 1px solid #898989;
+            box-shadow: none !important;
+            
+        }
+    }
+    
+
+
+
+
+
+
+
